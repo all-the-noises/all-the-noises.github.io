@@ -17,14 +17,22 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Eval-Arena: Noise and errors of LLM evals </h1>
-    <h2 class="subtitle is-4"> <a href="https://github.com/crux-eval/eval-arena">Doc/Code</a> </h2>
+    <h2 class="subtitle is-4"> <a href="https://all-the-noises.github.io/paper">Paper</a> </h2>
+    <h3 class="subtitle is-5"><b>Versions:</b>
+      <a href="../main/">main</a>, 
+      Open models with vLLM:
+      <a href="../lowk_temp0.7/">T=0.7</a>, 
+      <a href="../lowk_temp1/">T=1</a>, 
+      <a href="../highk_temp0.7/">high K T=0.7</a>, 
+    </h3>
+
       Summary of millions of questions and thousands of model pairs on various LLM benchmarks. Some summary statistics are available on mouse over. 
       
       <ul>
         <li><b>size</b>: number of questions in the benchmark</li>
         <li><b>model</b>: the number of models used on this benchmark</li>
-        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for expected score) in percent</li>
-        <li><b>SE(A-B)</b>: the paired standard error of a single score on each question (SE_x for expected score) in percent</li>
+        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for data noise) in percent</li>
+        <li><b>SE(A-B)</b>: the paired standard error of a single score on each question (SE_x for data noise) in percent</li>
         <!-- <li><b>SE_x(A-B)(A)</b>: the paired standard error of the expected score on each question</li> -->
         <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
         <li><b>no_solve</b>: percent questions not solved by any models</li>
@@ -34,13 +42,6 @@
       </ul>
 
 <p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
-<p><b>Versions:</b>
-  <a href="../main/">main</a>, 
-  Open models with vLLM:
-  <a href="../lowk_temp0.7/">T=0.7</a>, 
-  <a href="../lowk_temp1/">T=1</a>, 
-  <a href="../highk_temp0.7/">high K T=0.7</a>, 
-</p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -56,7 +57,6 @@
       <th>corr(A,B)</th>
       <th>no_solve</th>
       <th>tau-</th>
-      <th>sig_noise</th>
       <th>details</th>
     </tr>
   </thead>
@@ -72,7 +72,6 @@
       <td><span class="tooltip" data-tooltip="0.77±0.12 | [0.51--0.98] | n=196">77</span></td>
       <td>3.3</td>
       <td>0</td>
-      <td>None</td>
       <td><a href="model_aime2024_cot.html">models </a> |<a href="ex_aime2024_cot.html"> examples </a>|<a href="ex_v_model_acc_aime2024_cot.html"> data </a>|<a href="data_aime2024_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -86,7 +85,6 @@
       <td><span class="tooltip" data-tooltip="0.82±0.11 | [0.58--0.99] | n=210">82</span></td>
       <td>3.3</td>
       <td>13</td>
-      <td>None</td>
       <td><a href="model_aime2025_cot.html">models </a> |<a href="ex_aime2025_cot.html"> examples </a>|<a href="ex_v_model_acc_aime2025_cot.html"> data </a>|<a href="data_aime2025_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -100,7 +98,6 @@
       <td><span class="tooltip" data-tooltip="0.61±0.11 | [0.28--0.9] | n=986">61</span></td>
       <td>6.1</td>
       <td>1.2</td>
-      <td>None</td>
       <td><a href="model_human_eval_plus.html">models </a> |<a href="ex_human_eval_plus.html"> examples </a>|<a href="ex_v_model_acc_human_eval_plus.html"> data </a>|<a href="data_human_eval_plus.html"> raw </a></td>
     </tr>
     <tr>
@@ -114,7 +111,6 @@
       <td><span class="tooltip" data-tooltip="0.79±0.12 | [0.15--0.94] | n=372">79</span></td>
       <td>0.4</td>
       <td>1.2</td>
-      <td>None</td>
       <td><a href="model_math500_cot.html">models </a> |<a href="ex_math500_cot.html"> examples </a>|<a href="ex_v_model_acc_math500_cot.html"> data </a>|<a href="data_math500_cot.html"> raw </a></td>
     </tr>
   </tbody>

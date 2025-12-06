@@ -17,14 +17,22 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Eval-Arena: Noise and errors of LLM evals </h1>
-    <h2 class="subtitle is-4"> <a href="https://github.com/crux-eval/eval-arena">Doc/Code</a> </h2>
+    <h2 class="subtitle is-4"> <a href="https://all-the-noises.github.io/paper">Paper</a> </h2>
+    <h3 class="subtitle is-5"><b>Versions:</b>
+      <a href="../main/">main</a>, 
+      Open models with vLLM:
+      <a href="../lowk_temp0.7/">T=0.7</a>, 
+      <a href="../lowk_temp1/">T=1</a>, 
+      <a href="../highk_temp0.7/">high K T=0.7</a>, 
+    </h3>
+
       Summary of millions of questions and thousands of model pairs on various LLM benchmarks. Some summary statistics are available on mouse over. 
       
       <ul>
         <li><b>size</b>: number of questions in the benchmark</li>
         <li><b>model</b>: the number of models used on this benchmark</li>
-        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for expected score) in percent</li>
-        <li><b>SE(A-B)</b>: the paired standard error of a single score on each question (SE_x for expected score) in percent</li>
+        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for data noise) in percent</li>
+        <li><b>SE(A-B)</b>: the paired standard error of a single score on each question (SE_x for data noise) in percent</li>
         <!-- <li><b>SE_x(A-B)(A)</b>: the paired standard error of the expected score on each question</li> -->
         <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
         <li><b>no_solve</b>: percent questions not solved by any models</li>
@@ -34,13 +42,6 @@
       </ul>
 
 <p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
-<p><b>Versions:</b>
-  <a href="../main/">main</a>, 
-  Open models with vLLM:
-  <a href="../lowk_temp0.7/">T=0.7</a>, 
-  <a href="../lowk_temp1/">T=1</a>, 
-  <a href="../highk_temp0.7/">high K T=0.7</a>, 
-</p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -56,7 +57,6 @@
       <th>corr(A,B)</th>
       <th>no_solve</th>
       <th>tau-</th>
-      <th>sig_noise</th>
       <th>details</th>
     </tr>
   </thead>
@@ -72,7 +72,6 @@
       <td><span class="tooltip" data-tooltip="0.65±0.13 | [0.19--0.92] | n=164">65</span></td>
       <td>37</td>
       <td>0</td>
-      <td>None</td>
       <td><a href="model_aime2024_cot.html">models </a> |<a href="ex_aime2024_cot.html"> examples </a>|<a href="ex_v_model_acc_aime2024_cot.html"> data </a>|<a href="data_aime2024_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -86,7 +85,6 @@
       <td><span class="tooltip" data-tooltip="0.63±0.17 | [0.15--0.96] | n=210">63</span></td>
       <td>50</td>
       <td>0</td>
-      <td>None</td>
       <td><a href="model_aime2025_cot.html">models </a> |<a href="ex_aime2025_cot.html"> examples </a>|<a href="ex_v_model_acc_aime2025_cot.html"> data </a>|<a href="data_aime2025_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -100,7 +98,6 @@
       <td><span class="tooltip" data-tooltip="0.43±0.14 | [-0.11--0.66] | n=661">43</span></td>
       <td>0</td>
       <td>3.2</td>
-      <td>None</td>
       <td><a href="model_ap_cot.html">models </a> |<a href="ex_ap_cot.html"> examples </a>|<a href="ex_v_model_acc_ap_cot.html"> data </a>|<a href="data_ap_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -114,7 +111,6 @@
       <td><span class="tooltip" data-tooltip="0.39±0.11 | [0.18--0.65] | n=153">39</span></td>
       <td>2</td>
       <td>1.6</td>
-      <td>None</td>
       <td><a href="model_bbh_cot.html">models </a> |<a href="ex_bbh_cot.html"> examples </a>|<a href="ex_v_model_acc_bbh_cot.html"> data </a>|<a href="data_bbh_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -128,7 +124,6 @@
       <td><span class="tooltip" data-tooltip="0.49±0.12 | [0.16--0.78] | n=605">49</span></td>
       <td>2.4</td>
       <td>1.4</td>
-      <td>None</td>
       <td><a href="model_cruxeval_input_cot.html">models </a> |<a href="ex_cruxeval_input_cot.html"> examples </a>|<a href="ex_v_model_acc_cruxeval_input_cot.html"> data </a>|<a href="data_cruxeval_input_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -142,7 +137,6 @@
       <td><span class="tooltip" data-tooltip="0.54±0.11 | [0.27--0.75] | n=474">54</span></td>
       <td>4.4</td>
       <td>0.5</td>
-      <td>None</td>
       <td><a href="model_cruxeval_output_cot.html">models </a> |<a href="ex_cruxeval_output_cot.html"> examples </a>|<a href="ex_v_model_acc_cruxeval_output_cot.html"> data </a>|<a href="data_cruxeval_output_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -156,7 +150,6 @@
       <td><span class="tooltip" data-tooltip="0.58±0.088 | [0.32--0.72] | n=224">58</span></td>
       <td>32</td>
       <td>0.3</td>
-      <td>None</td>
       <td><a href="model_ds1000.html">models </a> |<a href="ex_ds1000.html"> examples </a>|<a href="ex_v_model_acc_ds1000.html"> data </a>|<a href="data_ds1000.html"> raw </a></td>
     </tr>
     <tr>
@@ -170,7 +163,6 @@
       <td><span class="tooltip" data-tooltip="0.33±0.16 | [-0.13--0.73] | n=1028">33</span></td>
       <td>0</td>
       <td>1.1</td>
-      <td>None</td>
       <td><a href="model_gmat_cot.html">models </a> |<a href="ex_gmat_cot.html"> examples </a>|<a href="ex_v_model_acc_gmat_cot.html"> data </a>|<a href="data_gmat_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -184,7 +176,6 @@
       <td><span class="tooltip" data-tooltip="0.23±0.13 | [-0.08--0.82] | n=1597">23</span></td>
       <td>0</td>
       <td>21</td>
-      <td>None</td>
       <td><a href="model_gpqa_cot.html">models </a> |<a href="ex_gpqa_cot.html"> examples </a>|<a href="ex_v_model_acc_gpqa_cot.html"> data </a>|<a href="data_gpqa_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -198,7 +189,6 @@
       <td><span class="tooltip" data-tooltip="0.26±0.19 | [-0.27--0.78] | n=1112">26</span></td>
       <td>0</td>
       <td>4</td>
-      <td>None</td>
       <td><a href="model_gre_physics_cot.html">models </a> |<a href="ex_gre_physics_cot.html"> examples </a>|<a href="ex_v_model_acc_gre_physics_cot.html"> data </a>|<a href="data_gre_physics_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -212,7 +202,6 @@
       <td><span class="tooltip" data-tooltip="0.49±0.084 | [0.24--0.68] | n=417">49</span></td>
       <td>0.076</td>
       <td>0.91</td>
-      <td>None</td>
       <td><a href="model_gsm8k_cot.html">models </a> |<a href="ex_gsm8k_cot.html"> examples </a>|<a href="ex_v_model_acc_gsm8k_cot.html"> data </a>|<a href="data_gsm8k_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -226,7 +215,6 @@
       <td><span class="tooltip" data-tooltip="0.58±0.091 | [0.36--0.83] | n=154">58</span></td>
       <td>1.5</td>
       <td>6.2</td>
-      <td>None</td>
       <td><a href="model_gsm8k_plus_cot.html">models </a> |<a href="ex_gsm8k_plus_cot.html"> examples </a>|<a href="ex_v_model_acc_gsm8k_plus_cot.html"> data </a>|<a href="data_gsm8k_plus_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -240,7 +228,6 @@
       <td><span class="tooltip" data-tooltip="0.41±0.13 | [0.012--0.7] | n=942">41</span></td>
       <td>1.2</td>
       <td>0</td>
-      <td>None</td>
       <td><a href="model_human_eval.html">models </a> |<a href="ex_human_eval.html"> examples </a>|<a href="ex_v_model_acc_human_eval.html"> data </a>|<a href="data_human_eval.html"> raw </a></td>
     </tr>
     <tr>
@@ -254,7 +241,6 @@
       <td><span class="tooltip" data-tooltip="0.44±0.13 | [0.063--0.74] | n=976">44</span></td>
       <td>6.7</td>
       <td>0.61</td>
-      <td>None</td>
       <td><a href="model_human_eval_plus.html">models </a> |<a href="ex_human_eval_plus.html"> examples </a>|<a href="ex_v_model_acc_human_eval_plus.html"> data </a>|<a href="data_human_eval_plus.html"> raw </a></td>
     </tr>
     <tr>
@@ -268,7 +254,6 @@
       <td><span class="tooltip" data-tooltip="0.36±0.14 | [0.13--0.65] | n=124">36</span></td>
       <td>19</td>
       <td>6</td>
-      <td>None</td>
       <td><a href="model_jeebench_chat_cot.html">models </a> |<a href="ex_jeebench_chat_cot.html"> examples </a>|<a href="ex_v_model_acc_jeebench_chat_cot.html"> data </a>|<a href="data_jeebench_chat_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -282,7 +267,6 @@
       <td><span class="tooltip" data-tooltip="0.47±0.062 | [0.4--0.56] | n=8">47</span></td>
       <td>39</td>
       <td>0</td>
-      <td>None</td>
       <td><a href="model_leetcode.html">models </a> |<a href="ex_leetcode.html"> examples </a>|<a href="ex_v_model_acc_leetcode.html"> data </a>|<a href="data_leetcode.html"> raw </a></td>
     </tr>
     <tr>
@@ -296,7 +280,6 @@
       <td><span class="tooltip" data-tooltip="0.41±0.16 | [-0.072--0.78] | n=698">41</span></td>
       <td>0.25</td>
       <td>11</td>
-      <td>None</td>
       <td><a href="model_lsat_cot.html">models </a> |<a href="ex_lsat_cot.html"> examples </a>|<a href="ex_v_model_acc_lsat_cot.html"> data </a>|<a href="data_lsat_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -310,7 +293,6 @@
       <td><span class="tooltip" data-tooltip="0.58±0.1 | [0.094--0.76] | n=459">58</span></td>
       <td>1.8</td>
       <td>0.8</td>
-      <td>None</td>
       <td><a href="model_math500_cot.html">models </a> |<a href="ex_math500_cot.html"> examples </a>|<a href="ex_v_model_acc_math500_cot.html"> data </a>|<a href="data_math500_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -324,7 +306,6 @@
       <td><span class="tooltip" data-tooltip="0.5±0.11 | [0.18--0.71] | n=148">50</span></td>
       <td>1.9</td>
       <td>0.72</td>
-      <td>None</td>
       <td><a href="model_math_cot.html">models </a> |<a href="ex_math_cot.html"> examples </a>|<a href="ex_v_model_acc_math_cot.html"> data </a>|<a href="data_math_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -338,7 +319,6 @@
       <td><span class="tooltip" data-tooltip="0.64±0.069 | [0.46--0.81] | n=327">64</span></td>
       <td>3.8</td>
       <td>2.2</td>
-      <td>None</td>
       <td><a href="model_mbpp.html">models </a> |<a href="ex_mbpp.html"> examples </a>|<a href="ex_v_model_acc_mbpp.html"> data </a>|<a href="data_mbpp.html"> raw </a></td>
     </tr>
     <tr>
@@ -352,7 +332,6 @@
       <td><span class="tooltip" data-tooltip="0.54±0.1 | [0.32--0.73] | n=198">54</span></td>
       <td>0.8</td>
       <td>1.3</td>
-      <td>None</td>
       <td><a href="model_mgsm_cot.html">models </a> |<a href="ex_mgsm_cot.html"> examples </a>|<a href="ex_v_model_acc_mgsm_cot.html"> data </a>|<a href="data_mgsm_cot.html"> raw </a></td>
     </tr>
     <tr>
@@ -366,7 +345,6 @@
       <td><span class="tooltip" data-tooltip="0.44±0.1 | [0.11--0.69] | n=158">44</span></td>
       <td>0.43</td>
       <td>13</td>
-      <td>None</td>
       <td><a href="model_mmlu_pro_cot.html">models </a> |<a href="ex_mmlu_pro_cot.html"> examples </a>|<a href="ex_v_model_acc_mmlu_pro_cot.html"> data </a>|<a href="data_mmlu_pro_cot.html"> raw </a></td>
     </tr>
   </tbody>
