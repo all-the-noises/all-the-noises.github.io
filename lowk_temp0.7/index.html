@@ -2,43 +2,42 @@
 <html>
 <head>
 <meta charset="utf-8" />   <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <link
   rel="stylesheet"
-  href="https://crux-eval.github.io/static/css/bulma.min.css"
+  href="static/css/bulma.min.css"
 >
 <link
   rel="stylesheet"
-  href="static/custom.css"
+  href="static/css/custom.css"
 >
 </head>
-
 <body>
 
 <div class="container">
 <section class="section">
-    <h1 class="title"> Eval-Arena: Noise and errors of LLM evals </h1>
-    <h2 class="subtitle is-4"> <a href="https://all-the-noises.github.io/paper">Paper</a> </h2>
+    <h1 class="title"> Measuring all the noises of LLM evals </h1>
+    <h3 class="subtitle is-5"> <a href=".">Results</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/crux-eval/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Versions:</b>
       <a href="../main/">main</a>, 
+      <a href="../train_curve/">train_curve</a>, 
       Open models with vLLM:
       <a href="../lowk_temp0.7/">T=0.7</a>, 
       <a href="../lowk_temp1/">T=1</a>, 
       <a href="../highk_temp0.7/">high K T=0.7</a>, 
     </h3>
-
-      Summary of millions of questions and thousands of model pairs on various LLM benchmarks. Some summary statistics are available on mouse over. 
-      
+      Summary of the results with more summary stats are available on mouse over and details linked.
       <ul>
-        <li><b>size</b>: number of questions in the benchmark</li>
-        <li><b>model</b>: the number of models used on this benchmark</li>
-        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for data noise) in percent</li>
-        <li><b>SE(A-B)</b>: the paired standard error of a single score on each question (SE_x for data noise) in percent</li>
-        <!-- <li><b>SE_x(A-B)(A)</b>: the paired standard error of the expected score on each question</li> -->
+        <li><b>size</b>: number of questions in the eval</li>
+        <li><b>models</b>: the number of models used on this eval</li>
+        <li><b>SE(A)</b>: the standard error of a single score on each question (SE_x for data noise) in percent. A difference of 1.96*sqrt(2)*SE(A) is the conventional standard for p=0.05 significance</li>
+        <li><b>SE(A-B)</b>: the total paired standard error of a single score on each question (SE_x for data noise) in percent. A difference of 1.96*SE(A-B) is the conventional standard for p=0.05 significance</li>
         <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
         <li><b>no_solve</b>: percent questions not solved by any models</li>
-        <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau.</li>
+        <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau</li>
+        <li><b>details</b>: aggregating by the models; by examples; the prediction heatmap; and raw data tables.</li>
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
-        <li><b>details</b>: details for each benchmark, aggregating by the models or by examples in each benchmark, and a plot of all models and examples sorted by difficulty. </li>
       </ul>
 
 <p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
@@ -66,7 +65,7 @@
       <td>30</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.073±0.01 | [0.057--0.089] | n=16">7.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.058±0.0091 | [0.046--0.073] | n=16">5.8</span></td>
+      <td><span class="tooltip" data-tooltip="0.057±0.0092 | [0.045--0.073] | n=16">5.7</span></td>
       <td><span class="tooltip" data-tooltip="0.081±0.0088 | [0.056--0.099] | n=222">8.1</span></td>
       <td><span class="tooltip" data-tooltip="0.047±0.015 | [0.015--0.087] | n=222">4.7</span></td>
       <td><span class="tooltip" data-tooltip="0.61±0.16 | [0.079--0.94] | n=222">61</span></td>
@@ -79,7 +78,7 @@
       <td>30</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.072±0.0068 | [0.058--0.08] | n=14">7.2</span></td>
-      <td><span class="tooltip" data-tooltip="0.06±0.01 | [0.039--0.074] | n=14">6</span></td>
+      <td><span class="tooltip" data-tooltip="0.059±0.011 | [0.037--0.074] | n=14">5.9</span></td>
       <td><span class="tooltip" data-tooltip="0.067±0.0069 | [0.042--0.081] | n=182">6.7</span></td>
       <td><span class="tooltip" data-tooltip="0.034±0.012 | [0--0.061] | n=182">3.4</span></td>
       <td><span class="tooltip" data-tooltip="0.8±0.096 | [0.53--0.96] | n=182">80</span></td>
@@ -92,7 +91,7 @@
       <td>711</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0025 | [0.0099--0.019] | n=52">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.012±0.0024 | [0.0057--0.018] | n=52">1.2</span></td>
+      <td><span class="tooltip" data-tooltip="0.012±0.0026 | [0.0039--0.018] | n=52">1.2</span></td>
       <td><span class="tooltip" data-tooltip="0.019±0.0038 | [0.01--0.025] | n=651">1.9</span></td>
       <td><span class="tooltip" data-tooltip="0.011±0.0027 | [0.0054--0.02] | n=651">1.1</span></td>
       <td><span class="tooltip" data-tooltip="0.51±0.14 | [-0.021--0.79] | n=651">51</span></td>
@@ -105,7 +104,7 @@
       <td>6511</td>
       <td>45</td>
       <td><span class="tooltip" data-tooltip="0.0056±0.00052 | [0.0043--0.0062] | n=45">0.56</span></td>
-      <td><span class="tooltip" data-tooltip="0.0042±0.00081 | [0.0023--0.0061] | n=45">0.42</span></td>
+      <td><span class="tooltip" data-tooltip="0.0041±0.00088 | [0.0021--0.0061] | n=45">0.41</span></td>
       <td><span class="tooltip" data-tooltip="0.0068±0.00081 | [0.0047--0.0079] | n=158">0.68</span></td>
       <td><span class="tooltip" data-tooltip="0.004±0.001 | [0.0015--0.0062] | n=158">0.4</span></td>
       <td><span class="tooltip" data-tooltip="0.48±0.14 | [0.19--0.72] | n=158">48</span></td>
@@ -118,7 +117,7 @@
       <td>800</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0013 | [0.013--0.018] | n=45">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.012±0.0021 | [0.0066--0.017] | n=45">1.2</span></td>
+      <td><span class="tooltip" data-tooltip="0.012±0.0023 | [0.0058--0.017] | n=45">1.2</span></td>
       <td><span class="tooltip" data-tooltip="0.019±0.00099 | [0.014--0.022] | n=669">1.9</span></td>
       <td><span class="tooltip" data-tooltip="0.01±0.0029 | [0.0053--0.021] | n=669">1</span></td>
       <td><span class="tooltip" data-tooltip="0.6±0.14 | [0.22--0.89] | n=669">60</span></td>
@@ -131,7 +130,7 @@
       <td>800</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0017 | [0.011--0.018] | n=49">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.012±0.0023 | [0.0067--0.018] | n=49">1.2</span></td>
+      <td><span class="tooltip" data-tooltip="0.012±0.0025 | [0.0059--0.018] | n=49">1.2</span></td>
       <td><span class="tooltip" data-tooltip="0.018±0.0014 | [0.013--0.021] | n=578">1.8</span></td>
       <td><span class="tooltip" data-tooltip="0.0093±0.0022 | [0.0045--0.015] | n=578">0.93</span></td>
       <td><span class="tooltip" data-tooltip="0.65±0.11 | [0.28--0.86] | n=578">65</span></td>
@@ -144,7 +143,7 @@
       <td>1000</td>
       <td>39</td>
       <td><span class="tooltip" data-tooltip="0.013±0.0017 | [0.0095--0.016] | n=24">1.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.011±0.0018 | [0.0075--0.014] | n=24">1.1</span></td>
+      <td><span class="tooltip" data-tooltip="0.01±0.0018 | [0.007--0.014] | n=24">1</span></td>
       <td><span class="tooltip" data-tooltip="0.013±0.00082 | [0.01--0.015] | n=242">1.3</span></td>
       <td><span class="tooltip" data-tooltip="0.008±0.0015 | [0.0049--0.012] | n=242">0.8</span></td>
       <td><span class="tooltip" data-tooltip="0.65±0.087 | [0.39--0.82] | n=242">65</span></td>
@@ -157,7 +156,7 @@
       <td>92</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.046±0.0066 | [0.024--0.052] | n=50">4.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.033±0.0073 | [0.011--0.052] | n=50">3.3</span></td>
+      <td><span class="tooltip" data-tooltip="0.031±0.0081 | [0.0058--0.052] | n=50">3.1</span></td>
       <td><span class="tooltip" data-tooltip="0.058±0.0081 | [0.029--0.07] | n=1074">5.8</span></td>
       <td><span class="tooltip" data-tooltip="0.034±0.008 | [0.0088--0.057] | n=1074">3.4</span></td>
       <td><span class="tooltip" data-tooltip="0.43±0.15 | [-0.15--0.88] | n=1074">43</span></td>
@@ -170,7 +169,7 @@
       <td>448</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0022 | [0.015--0.024] | n=49">2.1</span></td>
-      <td><span class="tooltip" data-tooltip="0.014±0.0043 | [0.005--0.023] | n=49">1.4</span></td>
+      <td><span class="tooltip" data-tooltip="0.013±0.0048 | [0.0028--0.023] | n=49">1.3</span></td>
       <td><span class="tooltip" data-tooltip="0.028±0.0015 | [0.019--0.03] | n=1763">2.8</span></td>
       <td><span class="tooltip" data-tooltip="0.016±0.0042 | [0.0034--0.029] | n=1763">1.6</span></td>
       <td><span class="tooltip" data-tooltip="0.31±0.16 | [-0.13--0.9] | n=1763">31</span></td>
@@ -183,7 +182,7 @@
       <td>75</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.052±0.0058 | [0.037--0.058] | n=49">5.2</span></td>
-      <td><span class="tooltip" data-tooltip="0.039±0.011 | [0.016--0.056] | n=49">3.9</span></td>
+      <td><span class="tooltip" data-tooltip="0.037±0.012 | [0.011--0.056] | n=49">3.7</span></td>
       <td><span class="tooltip" data-tooltip="0.066±0.0055 | [0.042--0.079] | n=1160">6.6</span></td>
       <td><span class="tooltip" data-tooltip="0.042±0.011 | [0.0017--0.071] | n=1160">4.2</span></td>
       <td><span class="tooltip" data-tooltip="0.32±0.2 | [-0.29--0.9] | n=1160">32</span></td>
@@ -196,7 +195,7 @@
       <td>1319</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.011±0.0023 | [0.0065--0.014] | n=50">1.1</span></td>
-      <td><span class="tooltip" data-tooltip="0.0081±0.0019 | [0.0053--0.013] | n=50">0.81</span></td>
+      <td><span class="tooltip" data-tooltip="0.0078±0.0019 | [0.0049--0.013] | n=50">0.78</span></td>
       <td><span class="tooltip" data-tooltip="0.011±0.0026 | [0.0062--0.016] | n=471">1.1</span></td>
       <td><span class="tooltip" data-tooltip="0.0064±0.0019 | [0.0033--0.012] | n=471">0.64</span></td>
       <td><span class="tooltip" data-tooltip="0.61±0.089 | [0.32--0.79] | n=471">61</span></td>
@@ -209,7 +208,7 @@
       <td>10552</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.0044±0.00039 | [0.0031--0.0049] | n=49">0.44</span></td>
-      <td><span class="tooltip" data-tooltip="0.0035±0.00052 | [0.0018--0.0048] | n=49">0.35</span></td>
+      <td><span class="tooltip" data-tooltip="0.0034±0.00056 | [0.0016--0.0048] | n=49">0.34</span></td>
       <td><span class="tooltip" data-tooltip="0.0044±0.00058 | [0.0029--0.0055] | n=176">0.44</span></td>
       <td><span class="tooltip" data-tooltip="0.0025±0.00061 | [0.0012--0.0041] | n=176">0.25</span></td>
       <td><span class="tooltip" data-tooltip="0.71±0.089 | [0.49--0.87] | n=176">71</span></td>
@@ -222,7 +221,7 @@
       <td>164</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.035±0.0043 | [0.024--0.039] | n=46">3.5</span></td>
-      <td><span class="tooltip" data-tooltip="0.027±0.0055 | [0.014--0.039] | n=46">2.7</span></td>
+      <td><span class="tooltip" data-tooltip="0.026±0.006 | [0.012--0.039] | n=46">2.6</span></td>
       <td><span class="tooltip" data-tooltip="0.044±0.0051 | [0.026--0.053] | n=991">4.4</span></td>
       <td><span class="tooltip" data-tooltip="0.026±0.006 | [0.012--0.042] | n=991">2.6</span></td>
       <td><span class="tooltip" data-tooltip="0.49±0.12 | [0.17--0.8] | n=991">49</span></td>
@@ -235,7 +234,7 @@
       <td>164</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.036±0.003 | [0.027--0.039] | n=45">3.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.029±0.0049 | [0.014--0.039] | n=45">2.9</span></td>
+      <td><span class="tooltip" data-tooltip="0.028±0.0054 | [0.012--0.039] | n=45">2.8</span></td>
       <td><span class="tooltip" data-tooltip="0.043±0.0046 | [0.027--0.051] | n=1051">4.3</span></td>
       <td><span class="tooltip" data-tooltip="0.026±0.0058 | [0.0094--0.04] | n=1051">2.6</span></td>
       <td><span class="tooltip" data-tooltip="0.53±0.11 | [0.2--0.86] | n=1051">53</span></td>
@@ -248,7 +247,7 @@
       <td>515</td>
       <td>49</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0023 | [0.014--0.02] | n=16">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.012±0.002 | [0.0084--0.015] | n=16">1.2</span></td>
+      <td><span class="tooltip" data-tooltip="0.011±0.0021 | [0.0075--0.014] | n=16">1.1</span></td>
       <td><span class="tooltip" data-tooltip="0.02±0.0016 | [0.017--0.024] | n=174">2</span></td>
       <td><span class="tooltip" data-tooltip="0.012±0.0028 | [0.005--0.017] | n=174">1.2</span></td>
       <td><span class="tooltip" data-tooltip="0.4±0.21 | [-0.088--0.82] | n=174">40</span></td>
@@ -261,7 +260,7 @@
       <td>180</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.03±0.0036 | [0.028--0.037] | n=5">3</span></td>
-      <td><span class="tooltip" data-tooltip="0.025±0.0051 | [0.02--0.032] | n=5">2.5</span></td>
+      <td><span class="tooltip" data-tooltip="0.024±0.0055 | [0.018--0.032] | n=5">2.4</span></td>
       <td><span class="tooltip" data-tooltip="0.034±0.0032 | [0.029--0.04] | n=14">3.4</span></td>
       <td><span class="tooltip" data-tooltip="0.022±0.0043 | [0.014--0.027] | n=14">2.2</span></td>
       <td><span class="tooltip" data-tooltip="0.54±0.085 | [0.45--0.66] | n=14">54</span></td>
@@ -274,7 +273,7 @@
       <td>403</td>
       <td>45</td>
       <td><span class="tooltip" data-tooltip="0.023±0.0015 | [0.02--0.025] | n=45">2.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.019±0.0042 | [0.0064--0.025] | n=45">1.9</span></td>
+      <td><span class="tooltip" data-tooltip="0.018±0.0047 | [0.0033--0.025] | n=43">1.8</span></td>
       <td><span class="tooltip" data-tooltip="0.027±0.0027 | [0.02--0.032] | n=795">2.7</span></td>
       <td><span class="tooltip" data-tooltip="0.018±0.0038 | [0.0071--0.028] | n=723">1.8</span></td>
       <td><span class="tooltip" data-tooltip="0.48±0.15 | [-0.022--0.84] | n=795">48</span></td>
@@ -287,7 +286,7 @@
       <td>500</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.02±0.0024 | [0.013--0.022] | n=43">2</span></td>
-      <td><span class="tooltip" data-tooltip="0.016±0.0028 | [0.0087--0.021] | n=43">1.6</span></td>
+      <td><span class="tooltip" data-tooltip="0.015±0.0028 | [0.0082--0.021] | n=42">1.5</span></td>
       <td><span class="tooltip" data-tooltip="0.021±0.0022 | [0.016--0.025] | n=453">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.011±0.0029 | [0.0051--0.021] | n=429">1.1</span></td>
       <td><span class="tooltip" data-tooltip="0.69±0.12 | [0.12--0.87] | n=453">69</span></td>
@@ -300,7 +299,7 @@
       <td>5000</td>
       <td>49</td>
       <td><span class="tooltip" data-tooltip="0.0063±0.00077 | [0.0043--0.0071] | n=43">0.63</span></td>
-      <td><span class="tooltip" data-tooltip="0.0048±0.00088 | [0.003--0.0068] | n=43">0.48</span></td>
+      <td><span class="tooltip" data-tooltip="0.0047±0.00093 | [0.0028--0.0068] | n=43">0.47</span></td>
       <td><span class="tooltip" data-tooltip="0.0073±0.00081 | [0.0052--0.0089] | n=142">0.73</span></td>
       <td><span class="tooltip" data-tooltip="0.0037±0.0014 | [0.0015--0.0069] | n=142">0.37</span></td>
       <td><span class="tooltip" data-tooltip="0.66±0.14 | [0.25--0.87] | n=142">66</span></td>
@@ -313,7 +312,7 @@
       <td>500</td>
       <td>35</td>
       <td><span class="tooltip" data-tooltip="0.021±0.002 | [0.015--0.022] | n=34">2.1</span></td>
-      <td><span class="tooltip" data-tooltip="0.018±0.0028 | [0.01--0.022] | n=34">1.8</span></td>
+      <td><span class="tooltip" data-tooltip="0.017±0.0029 | [0.0097--0.022] | n=34">1.7</span></td>
       <td><span class="tooltip" data-tooltip="0.021±0.0012 | [0.017--0.024] | n=362">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.014±0.0029 | [0.0053--0.02] | n=362">1.4</span></td>
       <td><span class="tooltip" data-tooltip="0.69±0.076 | [0.51--0.88] | n=362">69</span></td>
@@ -326,7 +325,7 @@
       <td>2750</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.0083±0.0011 | [0.0059--0.0095] | n=47">0.83</span></td>
-      <td><span class="tooltip" data-tooltip="0.0067±0.00099 | [0.0044--0.0095] | n=47">0.67</span></td>
+      <td><span class="tooltip" data-tooltip="0.0066±0.0011 | [0.0042--0.0095] | n=27">0.66</span></td>
       <td><span class="tooltip" data-tooltip="0.009±0.0013 | [0.0058--0.011] | n=216">0.9</span></td>
       <td><span class="tooltip" data-tooltip="0.0053±0.0013 | [0.0033--0.0089] | n=216">0.53</span></td>
       <td><span class="tooltip" data-tooltip="0.64±0.11 | [0.33--0.84] | n=216">64</span></td>
@@ -339,7 +338,7 @@
       <td>12032</td>
       <td>45</td>
       <td><span class="tooltip" data-tooltip="0.0042±0.0005 | [0.0028--0.0046] | n=45">0.42</span></td>
-      <td><span class="tooltip" data-tooltip="0.0033±0.00079 | [0.0012--0.0046] | n=45">0.33</span></td>
+      <td><span class="tooltip" data-tooltip="0.0031±0.00082 | [0.00098--0.0045] | n=44">0.31</span></td>
       <td><span class="tooltip" data-tooltip="0.0049±0.00033 | [0.0038--0.0054] | n=134">0.49</span></td>
       <td><span class="tooltip" data-tooltip="0.0029±0.0008 | [0.00089--0.0045] | n=128">0.29</span></td>
       <td><span class="tooltip" data-tooltip="0.54±0.12 | [0.24--0.73] | n=134">54</span></td>
