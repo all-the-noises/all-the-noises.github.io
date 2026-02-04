@@ -1,0 +1,175 @@
+,example_id,min_pass1_of_model,num_solved,models,pass1_of_ex,pass@any_of_ex,tau,example_link
+0,adaptive-rejection-sampler,0.42696629213483145,5,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5']",0.6,0.7142857142857143,0.3499271061118826,adaptive-rejection-sampler
+1,bn-fit-modify,0.5168539325842697,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5']",0.5428571428571428,0.5714285714285714,0.50709255283711,bn-fit-modify
+2,break-filter-js-from-html,0.42696629213483145,3,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5']",0.42857142857142855,0.42857142857142855,0.37796447300922725,break-filter-js-from-html
+3,build-cython-ext,0.33033707865168543,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7']",0.7714285714285714,0.8571428571428571,0.3944053188733077,build-cython-ext
+4,build-pmars,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.6285714285714287,0.7142857142857143,-0.11664236870396087,build-pmars
+5,build-pov-ray,0.33033707865168543,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.6857142857142857,0.7142857142857143,0.23328473740792174,build-pov-ray
+6,caffe-cifar-10,0.42696629213483145,2,['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'],0.17142857142857143,0.2857142857142857,0.1973855084879307,caffe-cifar-10
+7,cancel-async-tasks,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'dakou__qwen3-coder-480b']",0.5428571428571428,0.5714285714285714,0.50709255283711,cancel-async-tasks
+8,chess-best-move,0.6067415730337079,2,['Ante__Gemini-3-Pro-Preview' 'Mux__GPT-5.2'],0.17142857142857143,0.2857142857142857,0.5921565254637922,chess-best-move
+9,circuit-fibsqrt,0.42696629213483145,5,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5']",0.6857142857142857,0.7142857142857143,0.3499271061118826,circuit-fibsqrt
+10,cobol-modernization,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9142857142857143,1.0,0.7237468644557459,cobol-modernization
+11,code-from-image,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.8857142857142858,1.0,0.35634832254989923,code-from-image
+12,compile-compcert,0.33033707865168543,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7']",0.7714285714285715,0.8571428571428571,0.7237468644557459,compile-compcert
+13,configure-git-webserver,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.4,0.5714285714285714,-0.15877683720748895,configure-git-webserver
+14,constraints-scheduling,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.8857142857142858,1.0,0.5345224838248488,constraints-scheduling
+15,count-dataset-tokens,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.6571428571428571,0.8571428571428571,0.2057377999494559,count-dataset-tokens
+16,crack-7z-hash,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.8857142857142858,1.0,-0.1973855084879307,crack-7z-hash
+17,custom-memory-heap-crash,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.7428571428571429,0.8571428571428571,0.16903085094570333,custom-memory-heap-crash
+18,db-wal-recovery,0.42696629213483145,3,['MAYA__Claude-4.5-sonnet' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'],0.42857142857142855,0.42857142857142855,0.25197631533948484,db-wal-recovery
+19,distribution-search,0.33033707865168543,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7']",0.8285714285714285,0.8571428571428571,0.7237468644557459,distribution-search
+20,dna-assembly,0.5168539325842697,2,['Ante__Gemini-3-Pro-Preview' 'OpenCode__Claude-Opus-4.5'],0.19999999999999998,0.2857142857142857,0.3289758474798845,dna-assembly
+21,dna-insert,,0,[],0.0,0.0,,dna-insert
+22,extract-elf,0.27191011235955054,2,['Ante__Gemini-3-Pro-Preview' 'dakou__qwen3-coder-480b'],0.2285714285714286,0.2857142857142857,0.0,extract-elf
+23,extract-moves-from-video,0.5168539325842697,2,['Ante__Gemini-3-Pro-Preview' 'OpenCode__Claude-Opus-4.5'],0.17142857142857143,0.2857142857142857,0.3289758474798845,extract-moves-from-video
+24,feal-differential-cryptanalysis,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.7714285714285715,1.0,0.6900655593423541,feal-differential-cryptanalysis
+25,feal-linear-cryptanalysis,0.42696629213483145,3,['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet' 'Mux__GPT-5.2'],0.42857142857142855,0.42857142857142855,0.5039526306789697,feal-linear-cryptanalysis
+26,filter-js-from-html,0.42696629213483145,1,['MAYA__Claude-4.5-sonnet'],0.14285714285714285,0.14285714285714285,-0.17817416127494962,filter-js-from-html
+27,financial-document-processor,0.33033707865168543,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'Terminus2__GLM-4.7']",0.37142857142857144,0.5714285714285714,0.3704792868174742,financial-document-processor
+28,fix-code-vulnerability,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.8571428571428571,1.0,0.7237468644557459,fix-code-vulnerability
+29,fix-git,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9142857142857144,1.0,0.35634832254989923,fix-git
+30,fix-ocaml-gc,0.33033707865168543,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7']",0.7428571428571429,0.8571428571428571,0.7237468644557459,fix-ocaml-gc
+31,gcode-to-text,0.42696629213483145,2,['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'],0.17142857142857143,0.2857142857142857,0.1973855084879307,gcode-to-text
+32,git-leak-recovery,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9714285714285714,1.0,0.5345224838248488,git-leak-recovery
+33,git-multibranch,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9142857142857143,1.0,0.0657951694959769,git-multibranch
+34,gpt2-codegolf,0.42696629213483145,1,['MAYA__Claude-4.5-sonnet'],0.14285714285714285,0.14285714285714285,-0.17817416127494962,gpt2-codegolf
+35,headless-terminal,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__GPT-5.2' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.4857142857142857,0.5714285714285714,0.16903085094570333,headless-terminal
+36,hf-model-inference,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'dakou__qwen3-coder-480b']",0.6857142857142857,0.7142857142857143,0.5832118435198043,hf-model-inference
+37,install-windows-3.11,,0,[],0.0,0.0,,install-windows-3.11
+38,kv-store-grpc,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'dakou__qwen3-coder-480b']",0.7142857142857143,0.7142857142857143,0.4140393356054125,kv-store-grpc
+39,large-scale-text-editing,0.33033707865168543,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.6285714285714287,0.7142857142857143,0.6998542122237652,large-scale-text-editing
+40,largest-eigenval,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.48571428571428577,0.7142857142857143,0.3273268353539886,largest-eigenval
+41,llm-inference-batching-scheduler,0.5168539325842697,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5']",0.5714285714285714,0.5714285714285714,0.7559289460184545,llm-inference-batching-scheduler
+42,log-summary-date-ranges,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",1.0,1.0,,log-summary-date-ranges
+43,mailman,0.33033707865168543,3,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Terminus2__GLM-4.7']",0.31428571428571433,0.42857142857142855,0.11664236870396087,mailman
+44,make-doom-for-mips,,0,[],0.0,0.0,,make-doom-for-mips
+45,make-mips-interpreter,,0,[],0.0,0.0,,make-mips-interpreter
+46,mcmc-sampling-stan,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.5142857142857143,0.7142857142857143,0.2646280620124816,mcmc-sampling-stan
+47,merge-diff-arc-agi-task,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9142857142857143,1.0,0.5921565254637922,merge-diff-arc-agi-task
+48,model-extraction-relu-logits,0.27191011235955054,1,['dakou__qwen3-coder-480b'],0.08571428571428572,0.14285714285714285,-0.5345224838248488,model-extraction-relu-logits
+49,modernize-scientific-stack,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.8571428571428571,0.8571428571428571,0.17817416127494962,modernize-scientific-stack
+50,mteb-leaderboard,0.42696629213483145,2,['MAYA__Claude-4.5-sonnet' 'Mux__GPT-5.2'],0.2857142857142857,0.2857142857142857,0.13801311186847084,mteb-leaderboard
+51,mteb-retrieve,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.08571428571428572,0.14285714285714285,0.5345224838248488,mteb-retrieve
+52,multi-source-data-merger,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.8571428571428571,0.8571428571428571,0.17817416127494962,multi-source-data-merger
+53,nginx-request-logging,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9428571428571428,1.0,0.5345224838248488,nginx-request-logging
+54,openssl-selfsigned-cert,0.33033707865168543,4,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet' 'Mux__GPT-5.2'
+ 'Terminus2__GLM-4.7']",0.5428571428571428,0.5714285714285714,0.3944053188733077,openssl-selfsigned-cert
+55,overfull-hbox,0.5168539325842697,3,['Ante__Gemini-3-Pro-Preview' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'],0.42857142857142855,0.42857142857142855,0.6299407883487121,overfull-hbox
+56,password-recovery,0.33033707865168543,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7']",0.7714285714285715,0.8571428571428571,0.7237468644557459,password-recovery
+57,path-tracing,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.08571428571428572,0.14285714285714285,0.5345224838248488,path-tracing
+58,path-tracing-reverse,0.5842696629213483,2,['Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'],0.2857142857142857,0.2857142857142857,0.4140393356054125,path-tracing-reverse
+59,polyglot-c-py,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.028571428571428574,0.14285714285714285,0.5345224838248488,polyglot-c-py
+60,polyglot-rust-c,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.1142857142857143,0.14285714285714285,0.5345224838248488,polyglot-rust-c
+61,portfolio-optimization,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.8571428571428571,0.8571428571428571,0.17817416127494962,portfolio-optimization
+62,protein-assembly,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.1142857142857143,0.14285714285714285,0.5345224838248488,protein-assembly
+63,prove-plus-comm,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.8571428571428571,0.8571428571428571,0.17817416127494962,prove-plus-comm
+64,pypi-server,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.7428571428571429,0.8571428571428571,0.1973855084879307,pypi-server
+65,pytorch-model-cli,0.33033707865168543,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.6285714285714287,0.7142857142857143,0.6998542122237652,pytorch-model-cli
+66,pytorch-model-recovery,0.27191011235955054,5,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.5714285714285714,0.7142857142857143,0.15877683720748895,pytorch-model-recovery
+67,qemu-alpine-ssh,0.33033707865168543,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.37142857142857144,0.5714285714285714,0.2646280620124816,qemu-alpine-ssh
+68,qemu-startup,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.34285714285714286,0.5714285714285714,-0.05292561240249632,qemu-startup
+69,query-optimize,0.27191011235955054,3,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'dakou__qwen3-coder-480b']",0.2857142857142857,0.42857142857142855,-0.0563436169819011,query-optimize
+70,raman-fitting,0.42696629213483145,1,['MAYA__Claude-4.5-sonnet'],0.14285714285714285,0.14285714285714285,-0.17817416127494962,raman-fitting
+71,regex-chess,,0,[],0.0,0.0,,regex-chess
+72,regex-log,0.27191011235955054,7,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2' 'OpenCode__Claude-Opus-4.5'
+ 'Terminus2__GLM-4.7' 'dakou__qwen3-coder-480b']",0.9142857142857143,1.0,0.7237468644557459,regex-log
+73,reshard-c4-data,0.33033707865168543,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.5714285714285714,0.7142857142857143,0.47633051162246687,reshard-c4-data
+74,rstan-to-pystan,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'MAYA__Claude-4.5-sonnet'
+ 'OpenCode__Claude-Opus-4.5' 'dakou__qwen3-coder-480b']",0.42857142857142855,0.5714285714285714,-0.05292561240249632,rstan-to-pystan
+75,sam-cell-seg,,0,[],0.0,0.0,,sam-cell-seg
+76,sanitize-git-repo,0.27191011235955054,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'dakou__qwen3-coder-480b']",0.42857142857142855,0.5714285714285714,0.3704792868174742,sanitize-git-repo
+77,schemelike-metacircular-eval,0.5168539325842697,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5']",0.5714285714285714,0.5714285714285714,0.7559289460184545,schemelike-metacircular-eval
+78,sparql-university,0.33033707865168543,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'Terminus2__GLM-4.7']",0.4857142857142857,0.5714285714285714,0.47633051162246687,sparql-university
+79,sqlite-db-truncate,0.5168539325842697,4,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5']",0.5714285714285714,0.5714285714285714,0.7559289460184545,sqlite-db-truncate
+80,sqlite-with-gcov,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.7714285714285714,0.8571428571428571,0.50709255283711,sqlite-with-gcov
+81,torch-pipeline-parallelism,,0,[],0.0,0.0,,torch-pipeline-parallelism
+82,torch-tensor-parallelism,,0,[],0.0,0.0,,torch-tensor-parallelism
+83,train-fasttext,0.27191011235955054,2,['MAYA__Claude-4.5-sonnet' 'dakou__qwen3-coder-480b'],0.19999999999999998,0.2857142857142857,-0.4605661864718383,train-fasttext
+84,tune-mjcf,0.33033707865168543,5,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7']",0.6,0.7142857142857143,0.47633051162246687,tune-mjcf
+85,video-processing,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.028571428571428574,0.14285714285714285,0.5345224838248488,video-processing
+86,vulnerable-secret,0.27191011235955054,6,"['Ante__Gemini-3-Pro-Preview' 'Mux__Claude-Opus-4.5' 'Mux__GPT-5.2'
+ 'OpenCode__Claude-Opus-4.5' 'Terminus2__GLM-4.7'
+ 'dakou__qwen3-coder-480b']",0.8285714285714285,0.8571428571428571,0.4605661864718383,vulnerable-secret
+87,winning-avg-corewars,0.33033707865168543,3,['Ante__Gemini-3-Pro-Preview' 'Mux__GPT-5.2' 'Terminus2__GLM-4.7'],0.2571428571428571,0.42857142857142855,0.2817180849095055,winning-avg-corewars
+88,write-compressor,0.647191011235955,1,['Ante__Gemini-3-Pro-Preview'],0.1142857142857143,0.14285714285714285,0.5345224838248488,write-compressor
