@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "safim",
+  "size": 17410,
+  "models": 22,
+  "total_pairs": 328,
+  "close_pairs": 34,
+  "no_solve": 

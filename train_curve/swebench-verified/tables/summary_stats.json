@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "swebench-verified",
+  "size": 500,
+  "models": 150,
+  "total_pairs": 22350,
+  "close_pairs": 22342,
+  "no_solve": 

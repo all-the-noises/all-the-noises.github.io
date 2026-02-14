@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "gsm8k_plus_cot",
+  "size": 10552,
+  "models": 52,
+  "total_pairs": 1244,
+  "close_pairs": 154,
+  "no_solve": 

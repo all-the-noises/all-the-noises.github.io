@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "gpqa_cot",
+  "size": 448,
+  "models": 51,
+  "total_pairs": 2232,
+  "close_pairs": 1763,
+  "no_solve": 

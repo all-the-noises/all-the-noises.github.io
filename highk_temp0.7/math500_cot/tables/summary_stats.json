@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "math500_cot",
+  "size": 500,
+  "models": 48,
+  "total_pairs": 836,
+  "close_pairs": 372,
+  "no_solve": 
