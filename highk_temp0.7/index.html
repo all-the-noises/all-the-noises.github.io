@@ -18,14 +18,14 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
-    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/crux-eval/eval-arena">Code</a> </h2>
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Datasets:</b>
-      <a href="../main/">main</a>, 
-      <a href="../train_curve/">train_curve</a>, 
+      <a href="../main/">main</a>,
+      <a href="../train_curve/">train_curve</a>,
       Open models with vLLM:
-      <a href="../lowk_temp0.7/">T=0.7</a>, 
-      <a href="../lowk_temp1/">T=1</a>, 
-      <a href="../highk_temp0.7/">high K T=0.7</a>, 
+      <a href="../lowk_temp0.7/">T=0.7</a>,
+      <a href="../lowk_temp1/">T=1</a>,
+      <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
       Details are linked and more summary stats are available on mouse over.
       <ul>
@@ -33,14 +33,14 @@
         <li><b>models</b>: the number of models used on this eval</li>
         <li><b>SE(A)</b>: the standard error (SE_x for data SE) in percent. A difference of 1.96 &times; 1.41 &times; SE(A) is the conventional standard</li>
         <li><b>SE(A-B)</b>: the paired standard error (SE_x for data SE) in percent. A difference of 1.96 &times; SE(A-B) is the conventional standard</li>
-        <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
+        <!-- <li><b>corr(A,B)</b>: correlation of expected scores in percent</li> -->
         <li><b>no_solve</b>: percent questions not solved by any models</li>
         <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau</li>
         <li><b>details</b>: aggregating by the models; by examples; the prediction heatmap; and raw data tables.</li>
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
+<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -53,7 +53,6 @@
       <th>SE_x(A)</th>
       <th>SE(A-B)</th>
       <th>SE_x(A-B)</th>
-      <th>corr(A,B)</th>
       <th>no_solve</th>
       <th>tau-</th>
       <th>details</th>
@@ -68,10 +67,9 @@
       <td><span class="tooltip" data-tooltip="0.057±0.0072 | [0.044--0.068] | n=15">5.7</span></td>
       <td><span class="tooltip" data-tooltip="0.08±0.0072 | [0.062--0.094] | n=196">8</span></td>
       <td><span class="tooltip" data-tooltip="0.037±0.011 | [0.012--0.057] | n=196">3.7</span></td>
-      <td><span class="tooltip" data-tooltip="0.77±0.12 | [0.51--0.98] | n=196">77</span></td>
       <td>3.3</td>
       <td>0</td>
-      <td><a href="aime2024_cot/model.html">models </a> |<a href="aime2024_cot/ex.html"> examples </a>|<a href="aime2024_cot/ex_v_model_acc.html"> data </a>|<a href="aime2024_cot/raw_index.html"> raw </a></td>
+      <td><a href="aime2024_cot/model.html">models </a> |<a href="aime2024_cot/ex.html"> examples </a>|<a href="aime2024_cot/ex_v_model_acc.html"> data </a>|<a href="aime2024_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>aime2025_cot</td>
@@ -81,10 +79,9 @@
       <td><span class="tooltip" data-tooltip="0.056±0.0098 | [0.039--0.068] | n=15">5.6</span></td>
       <td><span class="tooltip" data-tooltip="0.068±0.0061 | [0.056--0.082] | n=210">6.8</span></td>
       <td><span class="tooltip" data-tooltip="0.033±0.012 | [0.0074--0.055] | n=210">3.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.82±0.11 | [0.58--0.99] | n=210">82</span></td>
       <td>3.3</td>
       <td>13</td>
-      <td><a href="aime2025_cot/model.html">models </a> |<a href="aime2025_cot/ex.html"> examples </a>|<a href="aime2025_cot/ex_v_model_acc.html"> data </a>|<a href="aime2025_cot/raw_index.html"> raw </a></td>
+      <td><a href="aime2025_cot/model.html">models </a> |<a href="aime2025_cot/ex.html"> examples </a>|<a href="aime2025_cot/ex_v_model_acc.html"> data </a>|<a href="aime2025_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>human_eval_plus</td>
@@ -94,10 +91,9 @@
       <td><span class="tooltip" data-tooltip="0.027±0.0048 | [0.012--0.036] | n=44">2.7</span></td>
       <td><span class="tooltip" data-tooltip="0.043±0.0045 | [0.029--0.05] | n=986">4.3</span></td>
       <td><span class="tooltip" data-tooltip="0.024±0.0051 | [0.012--0.039] | n=986">2.4</span></td>
-      <td><span class="tooltip" data-tooltip="0.61±0.11 | [0.28--0.9] | n=986">61</span></td>
       <td>6.1</td>
       <td>1.2</td>
-      <td><a href="human_eval_plus/model.html">models </a> |<a href="human_eval_plus/ex.html"> examples </a>|<a href="human_eval_plus/ex_v_model_acc.html"> data </a>|<a href="human_eval_plus/raw_index.html"> raw </a></td>
+      <td><a href="human_eval_plus/model.html">models </a> |<a href="human_eval_plus/ex.html"> examples </a>|<a href="human_eval_plus/ex_v_model_acc.html"> data </a>|<a href="human_eval_plus/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>math500_cot</td>
@@ -107,10 +103,9 @@
       <td><span class="tooltip" data-tooltip="0.015±0.0024 | [0.0079--0.019] | n=40">1.5</span></td>
       <td><span class="tooltip" data-tooltip="0.021±0.0024 | [0.016--0.024] | n=372">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.0094±0.0018 | [0.0045--0.016] | n=372">0.94</span></td>
-      <td><span class="tooltip" data-tooltip="0.79±0.12 | [0.15--0.94] | n=372">79</span></td>
       <td>0.4</td>
       <td>1.2</td>
-      <td><a href="math500_cot/model.html">models </a> |<a href="math500_cot/ex.html"> examples </a>|<a href="math500_cot/ex_v_model_acc.html"> data </a>|<a href="math500_cot/raw_index.html"> raw </a></td>
+      <td><a href="math500_cot/model.html">models </a> |<a href="math500_cot/ex.html"> examples </a>|<a href="math500_cot/ex_v_model_acc.html"> data </a>|<a href="math500_cot/raw_index.html"> more </a></td>
     </tr>
   </tbody>
 </table>
@@ -124,6 +119,8 @@
     <ul>
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
+    <br/>
+    <p class="has-text-grey-light">Generated on 2026-02-14 05:54:51</p>
 </section>
 </div>
 </body>

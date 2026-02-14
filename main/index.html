@@ -18,14 +18,14 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
-    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/crux-eval/eval-arena">Code</a> </h2>
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Datasets:</b>
-      <a href="../main/">main</a>, 
-      <a href="../train_curve/">train_curve</a>, 
+      <a href="../main/">main</a>,
+      <a href="../train_curve/">train_curve</a>,
       Open models with vLLM:
-      <a href="../lowk_temp0.7/">T=0.7</a>, 
-      <a href="../lowk_temp1/">T=1</a>, 
-      <a href="../highk_temp0.7/">high K T=0.7</a>, 
+      <a href="../lowk_temp0.7/">T=0.7</a>,
+      <a href="../lowk_temp1/">T=1</a>,
+      <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
       Details are linked and more summary stats are available on mouse over.
       <ul>
@@ -33,14 +33,14 @@
         <li><b>models</b>: the number of models used on this eval</li>
         <li><b>SE(A)</b>: the standard error (SE_x for data SE) in percent. A difference of 1.96 &times; 1.41 &times; SE(A) is the conventional standard</li>
         <li><b>SE(A-B)</b>: the paired standard error (SE_x for data SE) in percent. A difference of 1.96 &times; SE(A-B) is the conventional standard</li>
-        <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
+        <!-- <li><b>corr(A,B)</b>: correlation of expected scores in percent</li> -->
         <li><b>no_solve</b>: percent questions not solved by any models</li>
         <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau</li>
         <li><b>details</b>: aggregating by the models; by examples; the prediction heatmap; and raw data tables.</li>
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
+<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -51,7 +51,6 @@
       <th>models</th>
       <th>SE(A)</th>
       <th>SE(A-B)</th>
-      <th>corr(A,B)</th>
       <th>no_solve</th>
       <th>tau-</th>
       <th>details</th>
@@ -64,10 +63,9 @@
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.017±0.0012 | [0.012--0.018] | n=37">1.7</span></td>
       <td><span class="tooltip" data-tooltip="0.018±0.0015 | [0.013--0.021] | n=482">1.8</span></td>
-      <td><span class="tooltip" data-tooltip="0.56±0.079 | [0.38--0.8] | n=482">56</span></td>
       <td>2.4</td>
       <td>10</td>
-      <td><a href="CRUXEval-input-T0.2/model.html">models </a> |<a href="CRUXEval-input-T0.2/ex.html"> examples </a>|<a href="CRUXEval-input-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.2/raw_index.html"> raw </a></td>
+      <td><a href="CRUXEval-input-T0.2/model.html">models </a> |<a href="CRUXEval-input-T0.2/ex.html"> examples </a>|<a href="CRUXEval-input-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.2/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>CRUXEval-input-T0.8</td>
@@ -75,10 +73,9 @@
       <td>31</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0014 | [0.012--0.018] | n=31">1.6</span></td>
       <td><span class="tooltip" data-tooltip="0.018±0.001 | [0.014--0.021] | n=451">1.8</span></td>
-      <td><span class="tooltip" data-tooltip="0.69±0.063 | [0.48--0.87] | n=451">69</span></td>
       <td>2.1</td>
       <td>10</td>
-      <td><a href="CRUXEval-input-T0.8/model.html">models </a> |<a href="CRUXEval-input-T0.8/ex.html"> examples </a>|<a href="CRUXEval-input-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.8/raw_index.html"> raw </a></td>
+      <td><a href="CRUXEval-input-T0.8/model.html">models </a> |<a href="CRUXEval-input-T0.8/ex.html"> examples </a>|<a href="CRUXEval-input-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.8/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>CRUXEval-output-T0.2</td>
@@ -86,10 +83,9 @@
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.017±0.0011 | [0.014--0.018] | n=37">1.7</span></td>
       <td><span class="tooltip" data-tooltip="0.016±0.0015 | [0.011--0.019] | n=472">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.64±0.081 | [0.36--0.88] | n=472">64</span></td>
       <td>3</td>
       <td>3.8</td>
-      <td><a href="CRUXEval-output-T0.2/model.html">models </a> |<a href="CRUXEval-output-T0.2/ex.html"> examples </a>|<a href="CRUXEval-output-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.2/raw_index.html"> raw </a></td>
+      <td><a href="CRUXEval-output-T0.2/model.html">models </a> |<a href="CRUXEval-output-T0.2/ex.html"> examples </a>|<a href="CRUXEval-output-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.2/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>CRUXEval-output-T0.8</td>
@@ -97,10 +93,9 @@
       <td>31</td>
       <td><span class="tooltip" data-tooltip="0.017±0.00095 | [0.014--0.018] | n=31">1.7</span></td>
       <td><span class="tooltip" data-tooltip="0.016±0.001 | [0.013--0.019] | n=420">1.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.75±0.057 | [0.56--0.91] | n=420">75</span></td>
       <td>4.4</td>
       <td>6.9</td>
-      <td><a href="CRUXEval-output-T0.8/model.html">models </a> |<a href="CRUXEval-output-T0.8/ex.html"> examples </a>|<a href="CRUXEval-output-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.8/raw_index.html"> raw </a></td>
+      <td><a href="CRUXEval-output-T0.8/model.html">models </a> |<a href="CRUXEval-output-T0.8/ex.html"> examples </a>|<a href="CRUXEval-output-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.8/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>DS1000</td>
@@ -108,10 +103,9 @@
       <td>105</td>
       <td><span class="tooltip" data-tooltip="0.014±0.0015 | [0.0096--0.016] | n=90">1.4</span></td>
       <td><span class="tooltip" data-tooltip="0.015±0.0014 | [0.0094--0.019] | n=2964">1.5</span></td>
-      <td><span class="tooltip" data-tooltip="0.46±0.088 | [0.12--0.74] | n=2964">46</span></td>
       <td>11</td>
       <td>1.2</td>
-      <td><a href="DS1000/model.html">models </a> |<a href="DS1000/ex.html"> examples </a>|<a href="DS1000/ex_v_model_acc.html"> data </a>|<a href="DS1000/raw_index.html"> raw </a></td>
+      <td><a href="DS1000/model.html">models </a> |<a href="DS1000/ex.html"> examples </a>|<a href="DS1000/ex_v_model_acc.html"> data </a>|<a href="DS1000/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>agi_english</td>
@@ -119,10 +113,9 @@
       <td>35</td>
       <td><span class="tooltip" data-tooltip="0.0093±0.00056 | [0.0082--0.0099] | n=35">0.93</span></td>
       <td><span class="tooltip" data-tooltip="0.011±0.00081 | [0.0087--0.013] | n=246">1.1</span></td>
-      <td><span class="tooltip" data-tooltip="0.25±0.17 | [-0.16--0.58] | n=246">25</span></td>
       <td>0.98</td>
       <td>21</td>
-      <td><a href="agi_english/model.html">models </a> |<a href="agi_english/ex.html"> examples </a>|<a href="agi_english/ex_v_model_acc.html"> data </a>|<a href="agi_english/raw_index.html"> raw </a></td>
+      <td><a href="agi_english/model.html">models </a> |<a href="agi_english/ex.html"> examples </a>|<a href="agi_english/ex_v_model_acc.html"> data </a>|<a href="agi_english/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>arc_challenge</td>
@@ -130,10 +123,9 @@
       <td>38</td>
       <td><span class="tooltip" data-tooltip="0.014±0.00042 | [0.013--0.015] | n=38">1.4</span></td>
       <td><span class="tooltip" data-tooltip="0.013±0.00099 | [0.01--0.015] | n=464">1.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.62±0.059 | [0.48--0.73] | n=464">62</span></td>
       <td>14</td>
       <td>11</td>
-      <td><a href="arc_challenge/model.html">models </a> |<a href="arc_challenge/ex.html"> examples </a>|<a href="arc_challenge/ex_v_model_acc.html"> data </a>|<a href="arc_challenge/raw_index.html"> raw </a></td>
+      <td><a href="arc_challenge/model.html">models </a> |<a href="arc_challenge/ex.html"> examples </a>|<a href="arc_challenge/ex_v_model_acc.html"> data </a>|<a href="arc_challenge/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>gsm8k</td>
@@ -141,10 +133,9 @@
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.012±0.0016 | [0.0085--0.014] | n=30">1.2</span></td>
       <td><span class="tooltip" data-tooltip="0.013±0.0014 | [0.01--0.015] | n=136">1.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.38±0.055 | [0.25--0.5] | n=136">38</span></td>
       <td>2.1</td>
       <td>0.53</td>
-      <td><a href="gsm8k/model.html">models </a> |<a href="gsm8k/ex.html"> examples </a>|<a href="gsm8k/ex_v_model_acc.html"> data </a>|<a href="gsm8k/raw_index.html"> raw </a></td>
+      <td><a href="gsm8k/model.html">models </a> |<a href="gsm8k/ex.html"> examples </a>|<a href="gsm8k/ex_v_model_acc.html"> data </a>|<a href="gsm8k/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>hellaswag</td>
@@ -152,10 +143,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0041±0.00051 | [0.0032--0.005] | n=36">0.41</span></td>
       <td><span class="tooltip" data-tooltip="0.0026±0.00037 | [0.0021--0.0035] | n=124">0.26</span></td>
-      <td><span class="tooltip" data-tooltip="0.77±0.038 | [0.69--0.82] | n=124">77</span></td>
       <td>6.1</td>
       <td>1.6</td>
-      <td><a href="hellaswag/model.html">models </a> |<a href="hellaswag/ex.html"> examples </a>|<a href="hellaswag/ex_v_model_acc.html"> data </a>|<a href="hellaswag/raw_index.html"> raw </a></td>
+      <td><a href="hellaswag/model.html">models </a> |<a href="hellaswag/ex.html"> examples </a>|<a href="hellaswag/ex_v_model_acc.html"> data </a>|<a href="hellaswag/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>humaneval</td>
@@ -163,10 +153,9 @@
       <td>78</td>
       <td><span class="tooltip" data-tooltip="0.035±0.0035 | [0.025--0.039] | n=78">3.5</span></td>
       <td><span class="tooltip" data-tooltip="0.038±0.0051 | [0.018--0.05] | n=2724">3.8</span></td>
-      <td><span class="tooltip" data-tooltip="0.46±0.1 | [0.14--0.81] | n=2724">46</span></td>
       <td>3.7</td>
       <td>1.2</td>
-      <td><a href="humaneval/model.html">models </a> |<a href="humaneval/ex.html"> examples </a>|<a href="humaneval/ex_v_model_acc.html"> data </a>|<a href="humaneval/raw_index.html"> raw </a></td>
+      <td><a href="humaneval/model.html">models </a> |<a href="humaneval/ex.html"> examples </a>|<a href="humaneval/ex_v_model_acc.html"> data </a>|<a href="humaneval/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>humaneval+</td>
@@ -174,10 +163,9 @@
       <td>49</td>
       <td><span class="tooltip" data-tooltip="0.037±0.0017 | [0.033--0.039] | n=49">3.7</span></td>
       <td><span class="tooltip" data-tooltip="0.039±0.0036 | [0.029--0.05] | n=1476">3.9</span></td>
-      <td><span class="tooltip" data-tooltip="0.45±0.084 | [0.16--0.73] | n=1476">45</span></td>
       <td>4.3</td>
       <td>1.8</td>
-      <td><a href="humaneval+/model.html">models </a> |<a href="humaneval+/ex.html"> examples </a>|<a href="humaneval+/ex_v_model_acc.html"> data </a>|<a href="humaneval+/raw_index.html"> raw </a></td>
+      <td><a href="humaneval+/model.html">models </a> |<a href="humaneval+/ex.html"> examples </a>|<a href="humaneval+/ex_v_model_acc.html"> data </a>|<a href="humaneval+/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>lcb_codegen_v5</td>
@@ -185,10 +173,9 @@
       <td>24</td>
       <td><span class="tooltip" data-tooltip="0.015±0.0016 | [0.012--0.017] | n=24">1.5</span></td>
       <td><span class="tooltip" data-tooltip="0.013±0.0018 | [0.0099--0.017] | n=111">1.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.66±0.089 | [0.49--0.92] | n=111">66</span></td>
       <td>6.4</td>
       <td>1.1</td>
-      <td><a href="lcb_codegen_v5/model.html">models </a> |<a href="lcb_codegen_v5/ex.html"> examples </a>|<a href="lcb_codegen_v5/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v5/raw_index.html"> raw </a></td>
+      <td><a href="lcb_codegen_v5/model.html">models </a> |<a href="lcb_codegen_v5/ex.html"> examples </a>|<a href="lcb_codegen_v5/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v5/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>lcb_codegen_v6</td>
@@ -196,10 +183,9 @@
       <td>33</td>
       <td><span class="tooltip" data-tooltip="0.013±0.0015 | [0.01--0.015] | n=33">1.3</span></td>
       <td><span class="tooltip" data-tooltip="0.011±0.0014 | [0.0087--0.015] | n=257">1.1</span></td>
-      <td><span class="tooltip" data-tooltip="0.65±0.088 | [0.46--0.91] | n=257">65</span></td>
       <td>3.4</td>
       <td>1.2</td>
-      <td><a href="lcb_codegen_v6/model.html">models </a> |<a href="lcb_codegen_v6/ex.html"> examples </a>|<a href="lcb_codegen_v6/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6/raw_index.html"> raw </a></td>
+      <td><a href="lcb_codegen_v6/model.html">models </a> |<a href="lcb_codegen_v6/ex.html"> examples </a>|<a href="lcb_codegen_v6/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>lcb_codegen_v6_080124</td>
@@ -207,10 +193,9 @@
       <td>33</td>
       <td><span class="tooltip" data-tooltip="0.022±0.0013 | [0.019--0.023] | n=33">2.2</span></td>
       <td><span class="tooltip" data-tooltip="0.019±0.0022 | [0.014--0.025] | n=366">1.9</span></td>
-      <td><span class="tooltip" data-tooltip="0.65±0.11 | [0.33--0.93] | n=366">65</span></td>
       <td>5.3</td>
       <td>2</td>
-      <td><a href="lcb_codegen_v6_080124/model.html">models </a> |<a href="lcb_codegen_v6_080124/ex.html"> examples </a>|<a href="lcb_codegen_v6_080124/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6_080124/raw_index.html"> raw </a></td>
+      <td><a href="lcb_codegen_v6_080124/model.html">models </a> |<a href="lcb_codegen_v6_080124/ex.html"> examples </a>|<a href="lcb_codegen_v6_080124/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6_080124/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>mbpp</td>
@@ -218,10 +203,9 @@
       <td>59</td>
       <td><span class="tooltip" data-tooltip="0.024±0.0022 | [0.016--0.026] | n=59">2.4</span></td>
       <td><span class="tooltip" data-tooltip="0.024±0.0027 | [0.016--0.031] | n=1776">2.4</span></td>
-      <td><span class="tooltip" data-tooltip="0.47±0.073 | [0.26--0.76] | n=1776">47</span></td>
       <td>2.4</td>
       <td>4</td>
-      <td><a href="mbpp/model.html">models </a> |<a href="mbpp/ex.html"> examples </a>|<a href="mbpp/ex_v_model_acc.html"> data </a>|<a href="mbpp/raw_index.html"> raw </a></td>
+      <td><a href="mbpp/model.html">models </a> |<a href="mbpp/ex.html"> examples </a>|<a href="mbpp/ex_v_model_acc.html"> data </a>|<a href="mbpp/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>mbpp+</td>
@@ -229,10 +213,9 @@
       <td>59</td>
       <td><span class="tooltip" data-tooltip="0.025±0.00078 | [0.023--0.026] | n=59">2.5</span></td>
       <td><span class="tooltip" data-tooltip="0.024±0.0023 | [0.017--0.03] | n=1966">2.4</span></td>
-      <td><span class="tooltip" data-tooltip="0.54±0.077 | [0.28--0.79] | n=1966">54</span></td>
       <td>9.5</td>
       <td>5.8</td>
-      <td><a href="mbpp+/model.html">models </a> |<a href="mbpp+/ex.html"> examples </a>|<a href="mbpp+/ex_v_model_acc.html"> data </a>|<a href="mbpp+/raw_index.html"> raw </a></td>
+      <td><a href="mbpp+/model.html">models </a> |<a href="mbpp+/ex.html"> examples </a>|<a href="mbpp+/ex_v_model_acc.html"> data </a>|<a href="mbpp+/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>mmlu</td>
@@ -240,10 +223,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0039±0.00027 | [0.0033--0.0042] | n=36">0.39</span></td>
       <td><span class="tooltip" data-tooltip="0.0044±0.00043 | [0.0033--0.0052] | n=94">0.44</span></td>
-      <td><span class="tooltip" data-tooltip="0.38±0.14 | [-0.031--0.55] | n=94">38</span></td>
       <td>0.6</td>
       <td>12</td>
-      <td><a href="mmlu/model.html">models </a> |<a href="mmlu/ex.html"> examples </a>|<a href="mmlu/ex_v_model_acc.html"> data </a>|<a href="mmlu/raw_index.html"> raw </a></td>
+      <td><a href="mmlu/model.html">models </a> |<a href="mmlu/ex.html"> examples </a>|<a href="mmlu/ex_v_model_acc.html"> data </a>|<a href="mmlu/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>nq</td>
@@ -251,10 +233,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0072±0.0009 | [0.005--0.0083] | n=31">0.72</span></td>
       <td><span class="tooltip" data-tooltip="0.0064±0.00037 | [0.005--0.0072] | n=136">0.64</span></td>
-      <td><span class="tooltip" data-tooltip="0.6±0.065 | [0.48--0.74] | n=136">60</span></td>
       <td>32</td>
       <td>5.5</td>
-      <td><a href="nq/model.html">models </a> |<a href="nq/ex.html"> examples </a>|<a href="nq/ex_v_model_acc.html"> data </a>|<a href="nq/raw_index.html"> raw </a></td>
+      <td><a href="nq/model.html">models </a> |<a href="nq/ex.html"> examples </a>|<a href="nq/ex_v_model_acc.html"> data </a>|<a href="nq/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>piqa</td>
@@ -262,10 +243,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0093±0.00065 | [0.0082--0.011] | n=36">0.93</span></td>
       <td><span class="tooltip" data-tooltip="0.007±0.00072 | [0.0054--0.0095] | n=682">0.7</span></td>
-      <td><span class="tooltip" data-tooltip="0.71±0.047 | [0.59--0.81] | n=682">71</span></td>
       <td>5.3</td>
       <td>8.4</td>
-      <td><a href="piqa/model.html">models </a> |<a href="piqa/ex.html"> examples </a>|<a href="piqa/ex_v_model_acc.html"> data </a>|<a href="piqa/raw_index.html"> raw </a></td>
+      <td><a href="piqa/model.html">models </a> |<a href="piqa/ex.html"> examples </a>|<a href="piqa/ex_v_model_acc.html"> data </a>|<a href="piqa/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>safim</td>
@@ -273,10 +253,9 @@
       <td>22</td>
       <td><span class="tooltip" data-tooltip="0.0036±0.00021 | [0.0031--0.0038] | n=22">0.36</span></td>
       <td><span class="tooltip" data-tooltip="0.0036±0.00055 | [0.0027--0.0044] | n=34">0.36</span></td>
-      <td><span class="tooltip" data-tooltip="0.5±0.13 | [0.32--0.7] | n=34">50</span></td>
       <td>16</td>
       <td>7.9</td>
-      <td><a href="safim/model.html">models </a> |<a href="safim/ex.html"> examples </a>|<a href="safim/ex_v_model_acc.html"> data </a>|<a href="safim/raw_index.html"> raw </a></td>
+      <td><a href="safim/model.html">models </a> |<a href="safim/ex.html"> examples </a>|<a href="safim/ex_v_model_acc.html"> data </a>|<a href="safim/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>siqa</td>
@@ -284,10 +263,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.011±0.00011 | [0.011--0.011] | n=36">1.1</span></td>
       <td><span class="tooltip" data-tooltip="0.0086±0.0014 | [0.0065--0.012] | n=740">0.86</span></td>
-      <td><span class="tooltip" data-tooltip="0.71±0.094 | [0.47--0.83] | n=740">71</span></td>
       <td>15</td>
       <td>19</td>
-      <td><a href="siqa/model.html">models </a> |<a href="siqa/ex.html"> examples </a>|<a href="siqa/ex_v_model_acc.html"> data </a>|<a href="siqa/raw_index.html"> raw </a></td>
+      <td><a href="siqa/model.html">models </a> |<a href="siqa/ex.html"> examples </a>|<a href="siqa/ex_v_model_acc.html"> data </a>|<a href="siqa/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-bash-only</td>
@@ -295,10 +273,9 @@
       <td>28</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0018 | [0.014--0.022] | n=27">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.02±0.0022 | [0.014--0.025] | n=314">2</span></td>
-      <td><span class="tooltip" data-tooltip="0.57±0.086 | [0.053--0.74] | n=314">57</span></td>
       <td>13</td>
       <td>2</td>
-      <td><a href="swebench-bash-only/model.html">models </a> |<a href="swebench-bash-only/ex.html"> examples </a>|<a href="swebench-bash-only/ex_v_model_acc.html"> data </a>|<a href="swebench-bash-only/raw_index.html"> raw </a></td>
+      <td><a href="swebench-bash-only/model.html">models </a> |<a href="swebench-bash-only/ex.html"> examples </a>|<a href="swebench-bash-only/ex_v_model_acc.html"> data </a>|<a href="swebench-bash-only/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-lite</td>
@@ -306,10 +283,9 @@
       <td>84</td>
       <td><span class="tooltip" data-tooltip="0.027±0.0021 | [0.019--0.029] | n=78">2.7</span></td>
       <td><span class="tooltip" data-tooltip="0.026±0.0025 | [0.0066--0.035] | n=3658">2.6</span></td>
-      <td><span class="tooltip" data-tooltip="0.52±0.096 | [0.17--0.96] | n=3658">52</span></td>
       <td>12</td>
       <td>1.7</td>
-      <td><a href="swebench-lite/model.html">models </a> |<a href="swebench-lite/ex.html"> examples </a>|<a href="swebench-lite/ex_v_model_acc.html"> data </a>|<a href="swebench-lite/raw_index.html"> raw </a></td>
+      <td><a href="swebench-lite/model.html">models </a> |<a href="swebench-lite/ex.html"> examples </a>|<a href="swebench-lite/ex_v_model_acc.html"> data </a>|<a href="swebench-lite/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-multimodal</td>
@@ -317,10 +293,9 @@
       <td>12</td>
       <td><span class="tooltip" data-tooltip="0.021±0.00063 | [0.019--0.021] | n=12">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.014±0.0013 | [0.0082--0.016] | n=116">1.4</span></td>
-      <td><span class="tooltip" data-tooltip="0.78±0.038 | [0.69--0.92] | n=116">78</span></td>
       <td>51</td>
       <td>5.3</td>
-      <td><a href="swebench-multimodal/model.html">models </a> |<a href="swebench-multimodal/ex.html"> examples </a>|<a href="swebench-multimodal/ex_v_model_acc.html"> data </a>|<a href="swebench-multimodal/raw_index.html"> raw </a></td>
+      <td><a href="swebench-multimodal/model.html">models </a> |<a href="swebench-multimodal/ex.html"> examples </a>|<a href="swebench-multimodal/ex_v_model_acc.html"> data </a>|<a href="swebench-multimodal/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-test</td>
@@ -328,10 +303,9 @@
       <td>23</td>
       <td><span class="tooltip" data-tooltip="0.0087±0.0012 | [0.0068--0.01] | n=16">0.87</span></td>
       <td><span class="tooltip" data-tooltip="0.0077±0.00036 | [0.0068--0.0082] | n=44">0.77</span></td>
-      <td><span class="tooltip" data-tooltip="0.55±0.087 | [0.42--0.75] | n=44">55</span></td>
       <td>43</td>
       <td>1</td>
-      <td><a href="swebench-test/model.html">models </a> |<a href="swebench-test/ex.html"> examples </a>|<a href="swebench-test/ex_v_model_acc.html"> data </a>|<a href="swebench-test/raw_index.html"> raw </a></td>
+      <td><a href="swebench-test/model.html">models </a> |<a href="swebench-test/ex.html"> examples </a>|<a href="swebench-test/ex_v_model_acc.html"> data </a>|<a href="swebench-test/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-verified</td>
@@ -339,21 +313,9 @@
       <td>131</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0014 | [0.014--0.022] | n=125">2.1</span></td>
       <td><span class="tooltip" data-tooltip="0.019±0.0023 | [0.0071--0.025] | n=5126">1.9</span></td>
-      <td><span class="tooltip" data-tooltip="0.58±0.082 | [0.19--0.94] | n=5126">58</span></td>
       <td>6.8</td>
       <td>1.6</td>
-      <td><a href="swebench-verified/model.html">models </a> |<a href="swebench-verified/ex.html"> examples </a>|<a href="swebench-verified/ex_v_model_acc.html"> data </a>|<a href="swebench-verified/raw_index.html"> raw </a></td>
-    </tr>
-    <tr>
-      <td>terminal-bench</td>
-      <td>80</td>
-      <td>25</td>
-      <td><span class="tooltip" data-tooltip="0.054±0.0042 | [0.037--0.056] | n=25">5.4</span></td>
-      <td><span class="tooltip" data-tooltip="0.053±0.0044 | [0.042--0.063] | n=428">5.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.67±0.1 | [0.11--0.86] | n=428">67</span></td>
-      <td>18</td>
-      <td>5</td>
-      <td><a href="terminal-bench/model.html">models </a> |<a href="terminal-bench/ex.html"> examples </a>|<a href="terminal-bench/ex_v_model_acc.html"> data </a>|<a href="terminal-bench/raw_index.html"> raw </a></td>
+      <td><a href="swebench-verified/model.html">models </a> |<a href="swebench-verified/ex.html"> examples </a>|<a href="swebench-verified/ex_v_model_acc.html"> data </a>|<a href="swebench-verified/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>terminal-bench-1.0</td>
@@ -361,10 +323,9 @@
       <td>25</td>
       <td><span class="tooltip" data-tooltip="0.054±0.0042 | [0.037--0.056] | n=25">5.4</span></td>
       <td><span class="tooltip" data-tooltip="0.053±0.0044 | [0.042--0.063] | n=428">5.3</span></td>
-      <td><span class="tooltip" data-tooltip="0.67±0.1 | [0.11--0.86] | n=428">67</span></td>
       <td>18</td>
       <td>5</td>
-      <td><a href="terminal-bench-1.0/model.html">models </a> |<a href="terminal-bench-1.0/ex.html"> examples </a>|<a href="terminal-bench-1.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-1.0/raw_index.html"> raw </a></td>
+      <td><a href="terminal-bench-1.0/model.html">models </a> |<a href="terminal-bench-1.0/ex.html"> examples </a>|<a href="terminal-bench-1.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-1.0/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>terminal-bench-2.0</td>
@@ -372,10 +333,9 @@
       <td>7</td>
       <td><span class="tooltip" data-tooltip="0.051±0.002 | [0.047--0.053] | n=7">5.1</span></td>
       <td><span class="tooltip" data-tooltip="0.058±0.009 | [0.045--0.069] | n=26">5.8</span></td>
-      <td><span class="tooltip" data-tooltip="0.39±0.22 | [0.066--0.63] | n=26">39</span></td>
       <td>9</td>
       <td>12</td>
-      <td><a href="terminal-bench-2.0/model.html">models </a> |<a href="terminal-bench-2.0/ex.html"> examples </a>|<a href="terminal-bench-2.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-2.0/raw_index.html"> raw </a></td>
+      <td><a href="terminal-bench-2.0/model.html">models </a> |<a href="terminal-bench-2.0/ex.html"> examples </a>|<a href="terminal-bench-2.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-2.0/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>tqa</td>
@@ -383,10 +343,9 @@
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0043±0.00042 | [0.0031--0.0047] | n=36">0.43</span></td>
       <td><span class="tooltip" data-tooltip="0.0035±0.00046 | [0.0026--0.0041] | n=62">0.35</span></td>
-      <td><span class="tooltip" data-tooltip="0.67±0.064 | [0.5--0.78] | n=62">67</span></td>
       <td>12</td>
       <td>2.9</td>
-      <td><a href="tqa/model.html">models </a> |<a href="tqa/ex.html"> examples </a>|<a href="tqa/ex_v_model_acc.html"> data </a>|<a href="tqa/raw_index.html"> raw </a></td>
+      <td><a href="tqa/model.html">models </a> |<a href="tqa/ex.html"> examples </a>|<a href="tqa/ex_v_model_acc.html"> data </a>|<a href="tqa/raw_index.html"> more </a></td>
     </tr>
   </tbody>
 </table>
@@ -400,6 +359,8 @@
     <ul>
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
+    <br/>
+    <p class="has-text-grey-light">Generated on 2026-02-14 06:00:24</p>
 </section>
 </div>
 </body>

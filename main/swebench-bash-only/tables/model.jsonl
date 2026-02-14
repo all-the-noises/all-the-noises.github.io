@@ -1,0 +1,28 @@
+{"model":"Claude 4.5 Opus medium (20251101)","pass1":0.744,"pass@count":0.744,"win_rate":0.2401481481,"count":1.0,"SE(A)":0.0195173769,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini 3 Pro Preview (2025-11-18)","pass1":0.742,"pass@count":0.742,"win_rate":0.2375555556,"count":1.0,"SE(A)":0.0195671153,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5.2 (2025-12-11) (high reasoning)","pass1":0.718,"pass@count":0.718,"win_rate":0.2256296296,"count":1.0,"SE(A)":0.0201234192,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude 4.5 Sonnet (20250929)","pass1":0.706,"pass@count":0.706,"win_rate":0.2164444444,"count":1.0,"SE(A)":0.0203746902,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5.2 (2025-12-11)","pass1":0.69,"pass@count":0.69,"win_rate":0.2131851852,"count":1.0,"SE(A)":0.0206833266,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude 4 Opus (20250514)","pass1":0.676,"pass@count":0.676,"win_rate":0.1919259259,"count":1.0,"SE(A)":0.0209295963,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5.1 (2025-11-13) (medium reasoning)","pass1":0.66,"pass@count":0.66,"win_rate":0.1882222222,"count":1.0,"SE(A)":0.0211849003,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5.1-codex (medium reasoning)","pass1":0.66,"pass@count":0.66,"win_rate":0.1854814815,"count":1.0,"SE(A)":0.0211849003,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5 (2025-08-07) (medium reasoning)","pass1":0.65,"pass@count":0.65,"win_rate":0.1788888889,"count":1.0,"SE(A)":0.021330729,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude 4 Sonnet (20250514)","pass1":0.648,"pass@count":0.648,"win_rate":0.1783703704,"count":1.0,"SE(A)":0.0213586516,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Kimi K2 Thinking","pass1":0.634,"pass@count":0.634,"win_rate":0.1725925926,"count":1.0,"SE(A)":0.0215427018,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Minimax M2","pass1":0.61,"pass@count":0.61,"win_rate":0.168,"count":1.0,"SE(A)":0.0218128403,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepSeek V3.2 Reasoner","pass1":0.6,"pass@count":0.6,"win_rate":0.1676296296,"count":1.0,"SE(A)":0.0219089023,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5 mini (2025-08-07) (medium reasoning)","pass1":0.598,"pass@count":0.598,"win_rate":0.1537037037,"count":1.0,"SE(A)":0.0219269697,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"o3 (2025-04-16)","pass1":0.584,"pass@count":0.584,"win_rate":0.1519259259,"count":1.0,"SE(A)":0.0220428673,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Devstral small (2512)","pass1":0.564,"pass@count":0.564,"win_rate":0.1492592593,"count":1.0,"SE(A)":0.0221767446,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Qwen3-Coder 480B\/A35B Instruct","pass1":0.554,"pass@count":0.554,"win_rate":0.1427407407,"count":1.0,"SE(A)":0.0222298898,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GLM-4.6 (T=1)","pass1":0.554,"pass@count":0.554,"win_rate":0.1376296296,"count":1.0,"SE(A)":0.0222298898,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GLM-4.5 (2025-08-22)","pass1":0.542,"pass@count":0.542,"win_rate":0.1299259259,"count":1.0,"SE(A)":0.0222816516,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Devstral (2512)","pass1":0.538,"pass@count":0.538,"win_rate":0.1419259259,"count":1.0,"SE(A)":0.0222960086,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini 2.5 Pro (2025-05-06)","pass1":0.536,"pass@count":0.536,"win_rate":0.1301481481,"count":1.0,"SE(A)":0.0223026456,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"o4-mini (2025-04-16)","pass1":0.45,"pass@count":0.45,"win_rate":0.0996296296,"count":1.0,"SE(A)":0.0222485955,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Kimi K2 Instruct","pass1":0.438,"pass@count":0.438,"win_rate":0.102962963,"count":1.0,"SE(A)":0.0221881049,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-5 nano (2025-08-07) (medium reasoning)","pass1":0.348,"pass@count":0.348,"win_rate":0.0735555556,"count":1.0,"SE(A)":0.0213023942,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"gpt-oss-120b","pass1":0.26,"pass@count":0.26,"win_rate":0.0524444444,"count":1.0,"SE(A)":0.0196163197,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Llama 4 Maverick Instruct","pass1":0.21,"pass@count":0.21,"win_rate":0.0391111111,"count":1.0,"SE(A)":0.0182153781,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude 3.7 Sonnet (20250219)","pass1":0.102,"pass@count":0.102,"win_rate":0.0212592593,"count":1.0,"SE(A)":0.0135348439,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Qwen2.5-Coder 32B Instruct","pass1":0.09,"pass@count":0.09,"win_rate":0.0127407407,"count":1.0,"SE(A)":0.0127984374,"SE_x(A)":null,"SE_pred(A)":null}

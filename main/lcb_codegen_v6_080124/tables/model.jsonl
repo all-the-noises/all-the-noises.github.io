@@ -1,0 +1,33 @@
+{"model":"O4-Mini (High)","pass1":0.8017621145,"pass@count":0.8017621145,"win_rate":0.2765728249,"count":1.0,"SE(A)":0.0187106195,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O3 (High)","pass1":0.7577092511,"pass@count":0.7577092511,"win_rate":0.2450130782,"count":1.0,"SE(A)":0.0201090607,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O4-Mini (Medium)","pass1":0.7422907489,"pass@count":0.7422907489,"win_rate":0.2244355727,"count":1.0,"SE(A)":0.0205269348,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini-2.5-Pro-06-05","pass1":0.7356828194,"pass@count":0.7356828194,"win_rate":0.2175936123,"count":1.0,"SE(A)":0.0206956979,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepSeek-R1-0528","pass1":0.7306167401,"pass@count":0.8788546256,"win_rate":0.2168756883,"count":10.0,"SE(A)":0.0208210288,"SE_x(A)":0.0175243586,"SE_pred(A)":0.0112433134}
+{"model":"Gemini-2.5-Pro-05-06","pass1":0.718061674,"pass@count":0.718061674,"win_rate":0.2029253855,"count":1.0,"SE(A)":0.0211168923,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"EXAONE-4.0-32B","pass1":0.7004405286,"pass@count":0.8061674009,"win_rate":0.1923423733,"count":4.0,"SE(A)":0.0214980582,"SE_x(A)":0.0179746001,"SE_pred(A)":0.0117932294}
+{"model":"OpenReasoning-Nemotron-32B","pass1":0.6980176211,"pass@count":0.8303964758,"win_rate":0.1923964069,"count":10.0,"SE(A)":0.0215474592,"SE_x(A)":0.0181335191,"SE_pred(A)":0.011639093}
+{"model":"Gemini-2.5-Pro-03-25","pass1":0.6784140969,"pass@count":0.6784140969,"win_rate":0.1818867015,"count":1.0,"SE(A)":0.0219213859,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O3-Mini-2025-01-31 (High)","pass1":0.6740088106,"pass@count":0.6740088106,"win_rate":0.1830981553,"count":1.0,"SE(A)":0.0219992458,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Grok-3-Mini (High)","pass1":0.6674008811,"pass@count":0.6674008811,"win_rate":0.212658315,"count":1.0,"SE(A)":0.0221118973,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Qwen3-235B-A22B","pass1":0.6585903084,"pass@count":0.6585903084,"win_rate":0.1646751101,"count":1.0,"SE(A)":0.0222544909,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O4-Mini (Low)","pass1":0.6585903084,"pass@count":0.6585903084,"win_rate":0.1641175661,"count":1.0,"SE(A)":0.0222544909,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"XBai-o4-medium","pass1":0.6497797357,"pass@count":0.6497797357,"win_rate":0.1589551211,"count":1.0,"SE(A)":0.0223885409,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O3-Mini-2025-01-31 (Med)","pass1":0.6299559471,"pass@count":0.6299559471,"win_rate":0.1521819934,"count":1.0,"SE(A)":0.0226596855,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini-2.5-Flash-05-20","pass1":0.6189427313,"pass@count":0.6189427313,"win_rate":0.1406284416,"count":1.0,"SE(A)":0.0227925246,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini-2.5-Flash-04-17","pass1":0.6057268722,"pass@count":0.6057268722,"win_rate":0.1341375275,"count":1.0,"SE(A)":0.022935546,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O3-Mini-2025-01-31 (Low)","pass1":0.5704845815,"pass@count":0.5704845815,"win_rate":0.1152016795,"count":1.0,"SE(A)":0.0232318293,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-Opus-4 (Thinking)","pass1":0.5660792952,"pass@count":0.5660792952,"win_rate":0.1082840033,"count":1.0,"SE(A)":0.0232603313,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-Sonnet-4 (Thinking)","pass1":0.5594713656,"pass@count":0.5594713656,"win_rate":0.1079811399,"count":1.0,"SE(A)":0.0232995792,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"QwQ-32B_temp","pass1":0.5572687225,"pass@count":0.5572687225,"win_rate":0.1081084802,"count":1.0,"SE(A)":0.0233117303,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-3.7-Sonnet","pass1":0.5044052863,"pass@count":0.5044052863,"win_rate":0.0847604626,"count":1.0,"SE(A)":0.0234652519,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini-Flash-2.0-Thinking-01-21","pass1":0.4889867841,"pass@count":0.4889867841,"win_rate":0.0853627478,"count":1.0,"SE(A)":0.0234604696,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Gemini-Flash-2.0-Thinking-12-19","pass1":0.486784141,"pass@count":0.486784141,"win_rate":0.0884292401,"count":1.0,"SE(A)":0.0234579641,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-Sonnet-4","pass1":0.4713656388,"pass@count":0.4713656388,"win_rate":0.0724463106,"count":1.0,"SE(A)":0.0234276501,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-Opus-4","pass1":0.4691629956,"pass@count":0.4691629956,"win_rate":0.0719059747,"count":1.0,"SE(A)":0.0234214913,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Claude-3.5-Sonnet-20241022","pass1":0.363876652,"pass@count":0.4162995595,"win_rate":0.0384182269,"count":10.0,"SE(A)":0.0225797868,"SE_x(A)":0.0215187227,"SE_pred(A)":0.0068404198}
+{"model":"Gemini-Flash-2.0-Exp","pass1":0.3127753304,"pass@count":0.3127753304,"win_rate":0.0260703469,"count":1.0,"SE(A)":0.0217589378,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"GPT-4O-2024-08-06","pass1":0.2953744493,"pass@count":0.3876651982,"win_rate":0.0202481415,"count":10.0,"SE(A)":0.0214110384,"SE_x(A)":0.0198225999,"SE_pred(A)":0.0080930278}
+{"model":"GPT-4-Turbo-2024-04-09","pass1":0.2870044053,"pass@count":0.3788546256,"win_rate":0.0191141244,"count":10.0,"SE(A)":0.0212304783,"SE_x(A)":0.019583439,"SE_pred(A)":0.00819891}
+{"model":"GPT-4O-mini-2024-07-18","pass1":0.2746696035,"pass@count":0.3436123348,"win_rate":0.0172057406,"count":10.0,"SE(A)":0.0209481325,"SE_x(A)":0.0200097104,"SE_pred(A)":0.0061996569}
+{"model":"DeepSeek-V3","pass1":0.2720264317,"pass@count":0.3568281938,"win_rate":0.0283459526,"count":10.0,"SE(A)":0.0208850458,"SE_x(A)":0.0195036231,"SE_pred(A)":0.0074695264}
+{"model":"Claude-3-Haiku","pass1":0.2022026432,"pass@count":0.2400881057,"win_rate":0.0104401845,"count":10.0,"SE(A)":0.0188500187,"SE_x(A)":0.0180643626,"SE_pred(A)":0.0053853512}

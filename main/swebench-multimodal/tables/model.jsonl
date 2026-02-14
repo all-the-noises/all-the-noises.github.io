@@ -1,0 +1,12 @@
+{"model":"20251117_codefuse_pycfuse_svr","pass1":0.3647058824,"pass@count":0.3647058824,"win_rate":0.0750445633,"count":1.0,"SE(A)":0.0213144295,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250701_GUIRepair_o3","pass1":0.3647058824,"pass@count":0.3647058824,"win_rate":0.0759358289,"count":1.0,"SE(A)":0.0213144295,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250611_Refact_Agent_claude-4-sonnet","pass1":0.3607843137,"pass@count":0.3607843137,"win_rate":0.071657754,"count":1.0,"SE(A)":0.0212648561,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250528_OpenHands-Versa-claude4","pass1":0.3490196078,"pass@count":0.3490196078,"win_rate":0.0663101604,"count":1.0,"SE(A)":0.0211068673,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250531_GUIRepair_o4mini","pass1":0.3431372549,"pass@count":0.3431372549,"win_rate":0.0645276292,"count":1.0,"SE(A)":0.0210225873,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250509_OpenHands-Versa_claude3.7","pass1":0.3176470588,"pass@count":0.3176470588,"win_rate":0.0481283422,"count":1.0,"SE(A)":0.0206154047,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250531_GUIRepair_gpt41","pass1":0.3156862745,"pass@count":0.3156862745,"win_rate":0.0426024955,"count":1.0,"SE(A)":0.0205811855,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250401_zencoder","pass1":0.3098039216,"pass@count":0.3098039216,"win_rate":0.0367201426,"count":1.0,"SE(A)":0.020475976,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250531_GUIRepair_gpt4o","pass1":0.3078431373,"pass@count":0.3078431373,"win_rate":0.0367201426,"count":1.0,"SE(A)":0.0204400482,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250325_globant_codefixer_agent","pass1":0.3,"pass@count":0.3,"win_rate":0.0352941176,"count":1.0,"SE(A)":0.0202919862,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250311_zencoder","pass1":0.2745098039,"pass@count":0.2745098039,"win_rate":0.0308377897,"count":1.0,"SE(A)":0.0197610317,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"20250226_agentless_lite_claude3.5","pass1":0.2568627451,"pass@count":0.2568627451,"win_rate":0.016399287,"count":1.0,"SE(A)":0.0193463922,"SE_x(A)":null,"SE_pred(A)":null}

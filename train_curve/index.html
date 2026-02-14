@@ -18,14 +18,14 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
-    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/crux-eval/eval-arena">Code</a> </h2>
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Datasets:</b>
-      <a href="../main/">main</a>, 
-      <a href="../train_curve/">train_curve</a>, 
+      <a href="../main/">main</a>,
+      <a href="../train_curve/">train_curve</a>,
       Open models with vLLM:
-      <a href="../lowk_temp0.7/">T=0.7</a>, 
-      <a href="../lowk_temp1/">T=1</a>, 
-      <a href="../highk_temp0.7/">high K T=0.7</a>, 
+      <a href="../lowk_temp0.7/">T=0.7</a>,
+      <a href="../lowk_temp1/">T=1</a>,
+      <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
       Details are linked and more summary stats are available on mouse over.
       <ul>
@@ -33,14 +33,14 @@
         <li><b>models</b>: the number of models used on this eval</li>
         <li><b>SE(A)</b>: the standard error (SE_x for data SE) in percent. A difference of 1.96 &times; 1.41 &times; SE(A) is the conventional standard</li>
         <li><b>SE(A-B)</b>: the paired standard error (SE_x for data SE) in percent. A difference of 1.96 &times; SE(A-B) is the conventional standard</li>
-        <li><b>corr(A,B)</b>: correlation of expected scores in percent</li>
+        <!-- <li><b>corr(A,B)</b>: correlation of expected scores in percent</li> -->
         <li><b>no_solve</b>: percent questions not solved by any models</li>
         <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau</li>
         <li><b>details</b>: aggregating by the models; by examples; the prediction heatmap; and raw data tables.</li>
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><b>Raw data: </b><a href="summary.csv">summary.csv</a> </p>
+<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -53,7 +53,6 @@
       <th>SE_x(A)</th>
       <th>SE(A-B)</th>
       <th>SE_x(A-B)</th>
-      <th>corr(A,B)</th>
       <th>no_solve</th>
       <th>tau-</th>
       <th>details</th>
@@ -68,10 +67,9 @@
       <td><span class="tooltip" data-tooltip="0.013±0.00031 | [0.012--0.013] | n=72">1.3</span></td>
       <td><span class="tooltip" data-tooltip="0.015±0.00056 | [0.012--0.017] | n=22310">1.5</span></td>
       <td><span class="tooltip" data-tooltip="0.0025±0.0016 | [0--0.0054] | n=5112">0.25</span></td>
-      <td><span class="tooltip" data-tooltip="0.71±0.11 | [0.47--0.99] | n=22310">71</span></td>
       <td>39</td>
       <td>18</td>
-      <td><a href="swebench-pro/model.html">models </a> |<a href="swebench-pro/ex.html"> examples </a>|<a href="swebench-pro/ex_v_model_acc.html"> data </a>|<a href="swebench-pro/raw_index.html"> raw </a></td>
+      <td><a href="swebench-pro/model.html">models </a> |<a href="swebench-pro/ex.html"> examples </a>|<a href="swebench-pro/ex_v_model_acc.html"> data </a>|<a href="swebench-pro/raw_index.html"> more </a></td>
     </tr>
     <tr>
       <td>swebench-verified</td>
@@ -81,10 +79,9 @@
       <td><span class="tooltip" data-tooltip="0.018±0.00028 | [0.017--0.019] | n=72">1.8</span></td>
       <td><span class="tooltip" data-tooltip="0.019±0.00077 | [0.015--0.022] | n=22342">1.9</span></td>
       <td><span class="tooltip" data-tooltip="0.0022±0.0017 | [0--0.0058] | n=5112">0.22</span></td>
-      <td><span class="tooltip" data-tooltip="0.76±0.095 | [0.52--0.99] | n=22342">76</span></td>
       <td>20</td>
       <td>24</td>
-      <td><a href="swebench-verified/model.html">models </a> |<a href="swebench-verified/ex.html"> examples </a>|<a href="swebench-verified/ex_v_model_acc.html"> data </a>|<a href="swebench-verified/raw_index.html"> raw </a></td>
+      <td><a href="swebench-verified/model.html">models </a> |<a href="swebench-verified/ex.html"> examples </a>|<a href="swebench-verified/ex_v_model_acc.html"> data </a>|<a href="swebench-verified/raw_index.html"> more </a></td>
     </tr>
   </tbody>
 </table>
@@ -98,6 +95,8 @@
     <ul>
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
+    <br/>
+    <p class="has-text-grey-light">Generated on 2026-02-14 05:56:38</p>
 </section>
 </div>
 </body>
