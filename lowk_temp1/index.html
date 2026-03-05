@@ -19,6 +19,7 @@
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
     <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
+    
     <h3 class="subtitle is-5"><b>Datasets:</b>
       <a href="../main/">main</a>,
       <a href="../train_curve/">train_curve</a>,
@@ -27,6 +28,7 @@
       <a href="../lowk_temp1/">T=1</a>,
       <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
+    
       Details are linked and more summary stats are available on mouse over.
       <ul>
         <li><b>size</b>: number of questions in the eval</li>
@@ -40,7 +42,7 @@
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
+<p><a href="summary.csv">Full table</a>, <a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md">Descriptions</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -60,7 +62,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>aime2024_cot</td>
+      <td><a href="https://huggingface.co/datasets/AI-MO/aimo-validation-aime" target="_blank">aime2024_cot</a></td>
       <td>30</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.074±0.0093 | [0.059--0.089] | n=14">7.4</span></td>
@@ -72,7 +74,7 @@
       <td><a href="aime2024_cot/model.html">models </a> |<a href="aime2024_cot/ex.html"> examples </a>|<a href="aime2024_cot/ex_v_model_acc.html"> data </a>|<a href="aime2024_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>aime2025_cot</td>
+      <td><a href="https://huggingface.co/datasets/AI-MO/aimo-validation-aime" target="_blank">aime2025_cot</a></td>
       <td>30</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.07±0.0072 | [0.056--0.081] | n=15">7</span></td>
@@ -96,7 +98,7 @@
       <td><a href="ap_cot/model.html">models </a> |<a href="ap_cot/ex.html"> examples </a>|<a href="ap_cot/ex_v_model_acc.html"> data </a>|<a href="ap_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>bbh_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#big-bench-hard-bbh_cot" target="_blank">bbh_cot</a></td>
       <td>6511</td>
       <td>45</td>
       <td><span class="tooltip" data-tooltip="0.0055±0.00064 | [0.0038--0.0062] | n=43">0.55</span></td>
@@ -108,7 +110,7 @@
       <td><a href="bbh_cot/model.html">models </a> |<a href="bbh_cot/ex.html"> examples </a>|<a href="bbh_cot/ex_v_model_acc.html"> data </a>|<a href="bbh_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>cruxeval_input_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">cruxeval_input_cot</a></td>
       <td>800</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0017 | [0.011--0.018] | n=42">1.6</span></td>
@@ -120,7 +122,7 @@
       <td><a href="cruxeval_input_cot/model.html">models </a> |<a href="cruxeval_input_cot/ex.html"> examples </a>|<a href="cruxeval_input_cot/ex_v_model_acc.html"> data </a>|<a href="cruxeval_input_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>cruxeval_output_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">cruxeval_output_cot</a></td>
       <td>800</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0015 | [0.012--0.018] | n=43">1.6</span></td>
@@ -132,7 +134,7 @@
       <td><a href="cruxeval_output_cot/model.html">models </a> |<a href="cruxeval_output_cot/ex.html"> examples </a>|<a href="cruxeval_output_cot/ex_v_model_acc.html"> data </a>|<a href="cruxeval_output_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>ds1000</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#ds-1000" target="_blank">ds1000</a></td>
       <td>1000</td>
       <td>39</td>
       <td><span class="tooltip" data-tooltip="0.012±0.0017 | [0.0097--0.015] | n=22">1.2</span></td>
@@ -144,7 +146,7 @@
       <td><a href="ds1000/model.html">models </a> |<a href="ds1000/ex.html"> examples </a>|<a href="ds1000/ex_v_model_acc.html"> data </a>|<a href="ds1000/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>gmat_cot</td>
+      <td><a href="https://huggingface.co/datasets/baber/agieval" target="_blank">gmat_cot</a></td>
       <td>92</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.046±0.0064 | [0.028--0.052] | n=49">4.6</span></td>
@@ -156,7 +158,7 @@
       <td><a href="gmat_cot/model.html">models </a> |<a href="gmat_cot/ex.html"> examples </a>|<a href="gmat_cot/ex_v_model_acc.html"> data </a>|<a href="gmat_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>gpqa_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#gpqa-gpqa_cot" target="_blank">gpqa_cot</a></td>
       <td>448</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0022 | [0.015--0.024] | n=47">2.1</span></td>
@@ -168,7 +170,7 @@
       <td><a href="gpqa_cot/model.html">models </a> |<a href="gpqa_cot/ex.html"> examples </a>|<a href="gpqa_cot/ex_v_model_acc.html"> data </a>|<a href="gpqa_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>gre_physics_cot</td>
+      <td><a href="https://huggingface.co/datasets/baber/agieval" target="_blank">gre_physics_cot</a></td>
       <td>75</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.052±0.0057 | [0.038--0.058] | n=47">5.2</span></td>
@@ -180,7 +182,7 @@
       <td><a href="gre_physics_cot/model.html">models </a> |<a href="gre_physics_cot/ex.html"> examples </a>|<a href="gre_physics_cot/ex_v_model_acc.html"> data </a>|<a href="gre_physics_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>gsm8k_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#gsm8k" target="_blank">gsm8k_cot</a></td>
       <td>1319</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.011±0.0023 | [0.0063--0.014] | n=48">1.1</span></td>
@@ -192,7 +194,7 @@
       <td><a href="gsm8k_cot/model.html">models </a> |<a href="gsm8k_cot/ex.html"> examples </a>|<a href="gsm8k_cot/ex_v_model_acc.html"> data </a>|<a href="gsm8k_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>gsm8k_plus_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#gsm8k" target="_blank">gsm8k_plus_cot</a></td>
       <td>10552</td>
       <td>52</td>
       <td><span class="tooltip" data-tooltip="0.0044±0.00042 | [0.0031--0.0049] | n=48">0.44</span></td>
@@ -204,7 +206,7 @@
       <td><a href="gsm8k_plus_cot/model.html">models </a> |<a href="gsm8k_plus_cot/ex.html"> examples </a>|<a href="gsm8k_plus_cot/ex_v_model_acc.html"> data </a>|<a href="gsm8k_plus_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>human_eval</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#humaneval--plus" target="_blank">human_eval</a></td>
       <td>164</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.035±0.0038 | [0.025--0.039] | n=45">3.5</span></td>
@@ -216,7 +218,7 @@
       <td><a href="human_eval/model.html">models </a> |<a href="human_eval/ex.html"> examples </a>|<a href="human_eval/ex_v_model_acc.html"> data </a>|<a href="human_eval/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>human_eval_plus</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#humaneval--plus" target="_blank">human_eval_plus</a></td>
       <td>164</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.036±0.0033 | [0.026--0.039] | n=44">3.6</span></td>
@@ -228,7 +230,7 @@
       <td><a href="human_eval_plus/model.html">models </a> |<a href="human_eval_plus/ex.html"> examples </a>|<a href="human_eval_plus/ex_v_model_acc.html"> data </a>|<a href="human_eval_plus/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>jeebench_chat_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#jeebench-jeebench_chat_cot" target="_blank">jeebench_chat_cot</a></td>
       <td>515</td>
       <td>49</td>
       <td><span class="tooltip" data-tooltip="0.017±0.002 | [0.014--0.02] | n=13">1.7</span></td>
@@ -240,7 +242,7 @@
       <td><a href="jeebench_chat_cot/model.html">models </a> |<a href="jeebench_chat_cot/ex.html"> examples </a>|<a href="jeebench_chat_cot/ex_v_model_acc.html"> data </a>|<a href="jeebench_chat_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>leetcode</td>
+      <td><a href="https://huggingface.co/datasets/greengerong/leetcode" target="_blank">leetcode</a></td>
       <td>180</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.031±0.0043 | [0.027--0.037] | n=4">3.1</span></td>
@@ -252,7 +254,7 @@
       <td><a href="leetcode/model.html">models </a> |<a href="leetcode/ex.html"> examples </a>|<a href="leetcode/ex_v_model_acc.html"> data </a>|<a href="leetcode/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>lsat_cot</td>
+      <td><a href="https://huggingface.co/datasets/baber/agieval" target="_blank">lsat_cot</a></td>
       <td>403</td>
       <td>42</td>
       <td><span class="tooltip" data-tooltip="0.023±0.0017 | [0.02--0.025] | n=42">2.3</span></td>
@@ -264,7 +266,7 @@
       <td><a href="lsat_cot/model.html">models </a> |<a href="lsat_cot/ex.html"> examples </a>|<a href="lsat_cot/ex_v_model_acc.html"> data </a>|<a href="lsat_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>math500_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#math-500-math500_cot" target="_blank">math500_cot</a></td>
       <td>500</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.02±0.0022 | [0.014--0.022] | n=42">2</span></td>
@@ -276,7 +278,7 @@
       <td><a href="math500_cot/model.html">models </a> |<a href="math500_cot/ex.html"> examples </a>|<a href="math500_cot/ex_v_model_acc.html"> data </a>|<a href="math500_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>math_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#math-math_cot" target="_blank">math_cot</a></td>
       <td>5000</td>
       <td>48</td>
       <td><span class="tooltip" data-tooltip="0.0063±0.00074 | [0.0044--0.007] | n=40">0.63</span></td>
@@ -288,7 +290,7 @@
       <td><a href="math_cot/model.html">models </a> |<a href="math_cot/ex.html"> examples </a>|<a href="math_cot/ex_v_model_acc.html"> data </a>|<a href="math_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>mbpp</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#mbpp--mbpp" target="_blank">mbpp</a></td>
       <td>500</td>
       <td>35</td>
       <td><span class="tooltip" data-tooltip="0.021±0.002 | [0.014--0.022] | n=32">2.1</span></td>
@@ -300,7 +302,7 @@
       <td><a href="mbpp/model.html">models </a> |<a href="mbpp/ex.html"> examples </a>|<a href="mbpp/ex_v_model_acc.html"> data </a>|<a href="mbpp/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>mgsm_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#gsm8k" target="_blank">mgsm_cot</a></td>
       <td>2750</td>
       <td>51</td>
       <td><span class="tooltip" data-tooltip="0.0083±0.0011 | [0.0059--0.0095] | n=45">0.83</span></td>
@@ -312,7 +314,7 @@
       <td><a href="mgsm_cot/model.html">models </a> |<a href="mgsm_cot/ex.html"> examples </a>|<a href="mgsm_cot/ex_v_model_acc.html"> data </a>|<a href="mgsm_cot/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td>mmlu_pro_cot</td>
+      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#mmlu" target="_blank">mmlu_pro_cot</a></td>
       <td>12032</td>
       <td>45</td>
       <td><span class="tooltip" data-tooltip="0.0042±0.00041 | [0.0029--0.0046] | n=41">0.42</span></td>
@@ -336,7 +338,7 @@
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
     <br/>
-    <p class="has-text-grey-light">Generated on 2026-02-14 06:31:34</p>
+    <p class="has-text-grey-light">Generated on 2026-03-05 03:57:00</p>
 </section>
 </div>
 </body>
