@@ -18,8 +18,7 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
-    <h3 class="subtitle is-5"> <a href=".">Home</a> </h2>
-    
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Datasets:</b>
       <a href="../main/">main</a>,
       <a href="../train_curve/">train_curve</a>,
@@ -28,7 +27,6 @@
       <a href="../lowk_temp1/">T=1</a>,
       <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
-    
       Details are linked and more summary stats are available on mouse over.
       <ul>
         <li><b>size</b>: number of questions in the eval</li>
@@ -42,7 +40,7 @@
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><a href="summary.csv">Full table</a>, <a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md">Descriptions</a> </p>
+<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -60,7 +58,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">CRUXEval-input-T0.2</a></td>
+      <td>CRUXEval-input-T0.2</td>
       <td>800</td>
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.017±0.0012 | [0.012--0.018] | n=37">1.7</span></td>
@@ -70,7 +68,7 @@
       <td><a href="CRUXEval-input-T0.2/model.html">models </a> |<a href="CRUXEval-input-T0.2/ex.html"> examples </a>|<a href="CRUXEval-input-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.2/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">CRUXEval-input-T0.8</a></td>
+      <td>CRUXEval-input-T0.8</td>
       <td>800</td>
       <td>31</td>
       <td><span class="tooltip" data-tooltip="0.016±0.0014 | [0.012--0.018] | n=31">1.6</span></td>
@@ -80,7 +78,7 @@
       <td><a href="CRUXEval-input-T0.8/model.html">models </a> |<a href="CRUXEval-input-T0.8/ex.html"> examples </a>|<a href="CRUXEval-input-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-input-T0.8/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">CRUXEval-output-T0.2</a></td>
+      <td>CRUXEval-output-T0.2</td>
       <td>800</td>
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.017±0.0011 | [0.014--0.018] | n=37">1.7</span></td>
@@ -90,7 +88,7 @@
       <td><a href="CRUXEval-output-T0.2/model.html">models </a> |<a href="CRUXEval-output-T0.2/ex.html"> examples </a>|<a href="CRUXEval-output-T0.2/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.2/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#cruxeval" target="_blank">CRUXEval-output-T0.8</a></td>
+      <td>CRUXEval-output-T0.8</td>
       <td>800</td>
       <td>31</td>
       <td><span class="tooltip" data-tooltip="0.017±0.00095 | [0.014--0.018] | n=31">1.7</span></td>
@@ -100,7 +98,7 @@
       <td><a href="CRUXEval-output-T0.8/model.html">models </a> |<a href="CRUXEval-output-T0.8/ex.html"> examples </a>|<a href="CRUXEval-output-T0.8/ex_v_model_acc.html"> data </a>|<a href="CRUXEval-output-T0.8/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#ds-1000" target="_blank">DS1000</a></td>
+      <td>DS1000</td>
       <td>1000</td>
       <td>105</td>
       <td><span class="tooltip" data-tooltip="0.014±0.0015 | [0.0096--0.016] | n=90">1.4</span></td>
@@ -110,7 +108,7 @@
       <td><a href="DS1000/model.html">models </a> |<a href="DS1000/ex.html"> examples </a>|<a href="DS1000/ex_v_model_acc.html"> data </a>|<a href="DS1000/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#agieval-english-subset-agi_english" target="_blank">agi_english</a></td>
+      <td>agi_english</td>
       <td>2546</td>
       <td>35</td>
       <td><span class="tooltip" data-tooltip="0.0093±0.00056 | [0.0082--0.0099] | n=35">0.93</span></td>
@@ -120,7 +118,7 @@
       <td><a href="agi_english/model.html">models </a> |<a href="agi_english/ex.html"> examples </a>|<a href="agi_english/ex_v_model_acc.html"> data </a>|<a href="agi_english/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#arc-challenge" target="_blank">arc_challenge</a></td>
+      <td>arc_challenge</td>
       <td>1165</td>
       <td>38</td>
       <td><span class="tooltip" data-tooltip="0.014±0.00042 | [0.013--0.015] | n=38">1.4</span></td>
@@ -130,7 +128,7 @@
       <td><a href="arc_challenge/model.html">models </a> |<a href="arc_challenge/ex.html"> examples </a>|<a href="arc_challenge/ex_v_model_acc.html"> data </a>|<a href="arc_challenge/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#gsm8k" target="_blank">gsm8k</a></td>
+      <td>gsm8k</td>
       <td>1319</td>
       <td>37</td>
       <td><span class="tooltip" data-tooltip="0.012±0.0016 | [0.0085--0.014] | n=30">1.2</span></td>
@@ -140,7 +138,7 @@
       <td><a href="gsm8k/model.html">models </a> |<a href="gsm8k/ex.html"> examples </a>|<a href="gsm8k/ex_v_model_acc.html"> data </a>|<a href="gsm8k/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#hellaswag" target="_blank">hellaswag</a></td>
+      <td>hellaswag</td>
       <td>10042</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0041±0.00051 | [0.0032--0.005] | n=36">0.41</span></td>
@@ -150,7 +148,7 @@
       <td><a href="hellaswag/model.html">models </a> |<a href="hellaswag/ex.html"> examples </a>|<a href="hellaswag/ex_v_model_acc.html"> data </a>|<a href="hellaswag/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#humaneval--plus" target="_blank">humaneval</a></td>
+      <td>humaneval</td>
       <td>164</td>
       <td>78</td>
       <td><span class="tooltip" data-tooltip="0.035±0.0035 | [0.025--0.039] | n=78">3.5</span></td>
@@ -160,7 +158,7 @@
       <td><a href="humaneval/model.html">models </a> |<a href="humaneval/ex.html"> examples </a>|<a href="humaneval/ex_v_model_acc.html"> data </a>|<a href="humaneval/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="#humaneval--plus" target="_blank">humaneval+</a></td>
+      <td>humaneval+</td>
       <td>164</td>
       <td>49</td>
       <td><span class="tooltip" data-tooltip="0.037±0.0017 | [0.033--0.039] | n=49">3.7</span></td>
@@ -170,7 +168,7 @@
       <td><a href="humaneval+/model.html">models </a> |<a href="humaneval+/ex.html"> examples </a>|<a href="humaneval+/ex_v_model_acc.html"> data </a>|<a href="humaneval+/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#livecodebench-lcb_codegen_v5-v6-v6_080124" target="_blank">lcb_codegen_v5</a></td>
+      <td>lcb_codegen_v5</td>
       <td>880</td>
       <td>24</td>
       <td><span class="tooltip" data-tooltip="0.015±0.0016 | [0.012--0.017] | n=24">1.5</span></td>
@@ -180,7 +178,7 @@
       <td><a href="lcb_codegen_v5/model.html">models </a> |<a href="lcb_codegen_v5/ex.html"> examples </a>|<a href="lcb_codegen_v5/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v5/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#livecodebench-lcb_codegen_v5-v6-v6_080124" target="_blank">lcb_codegen_v6</a></td>
+      <td>lcb_codegen_v6</td>
       <td>1055</td>
       <td>33</td>
       <td><span class="tooltip" data-tooltip="0.013±0.0015 | [0.01--0.015] | n=33">1.3</span></td>
@@ -190,7 +188,7 @@
       <td><a href="lcb_codegen_v6/model.html">models </a> |<a href="lcb_codegen_v6/ex.html"> examples </a>|<a href="lcb_codegen_v6/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#livecodebench-lcb_codegen_v5-v6-v6_080124" target="_blank">lcb_codegen_v6_080124</a></td>
+      <td>lcb_codegen_v6_080124</td>
       <td>454</td>
       <td>33</td>
       <td><span class="tooltip" data-tooltip="0.022±0.0013 | [0.019--0.023] | n=33">2.2</span></td>
@@ -200,7 +198,7 @@
       <td><a href="lcb_codegen_v6_080124/model.html">models </a> |<a href="lcb_codegen_v6_080124/ex.html"> examples </a>|<a href="lcb_codegen_v6_080124/ex_v_model_acc.html"> data </a>|<a href="lcb_codegen_v6_080124/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#mbpp--mbpp" target="_blank">mbpp</a></td>
+      <td>mbpp</td>
       <td>378</td>
       <td>59</td>
       <td><span class="tooltip" data-tooltip="0.024±0.0022 | [0.016--0.026] | n=59">2.4</span></td>
@@ -210,7 +208,7 @@
       <td><a href="mbpp/model.html">models </a> |<a href="mbpp/ex.html"> examples </a>|<a href="mbpp/ex_v_model_acc.html"> data </a>|<a href="mbpp/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#mbpp--mbpp" target="_blank">mbpp+</a></td>
+      <td>mbpp+</td>
       <td>378</td>
       <td>59</td>
       <td><span class="tooltip" data-tooltip="0.025±0.00078 | [0.023--0.026] | n=59">2.5</span></td>
@@ -220,7 +218,7 @@
       <td><a href="mbpp+/model.html">models </a> |<a href="mbpp+/ex.html"> examples </a>|<a href="mbpp+/ex_v_model_acc.html"> data </a>|<a href="mbpp+/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#mmlu" target="_blank">mmlu</a></td>
+      <td>mmlu</td>
       <td>14042</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0039±0.00027 | [0.0033--0.0042] | n=36">0.39</span></td>
@@ -230,7 +228,7 @@
       <td><a href="mmlu/model.html">models </a> |<a href="mmlu/ex.html"> examples </a>|<a href="mmlu/ex_v_model_acc.html"> data </a>|<a href="mmlu/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#natural-questions-nq" target="_blank">nq</a></td>
+      <td>nq</td>
       <td>3610</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0072±0.0009 | [0.005--0.0083] | n=31">0.72</span></td>
@@ -240,7 +238,7 @@
       <td><a href="nq/model.html">models </a> |<a href="nq/ex.html"> examples </a>|<a href="nq/ex_v_model_acc.html"> data </a>|<a href="nq/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#piqa" target="_blank">piqa</a></td>
+      <td>piqa</td>
       <td>1838</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0093±0.00065 | [0.0082--0.011] | n=36">0.93</span></td>
@@ -250,7 +248,7 @@
       <td><a href="piqa/model.html">models </a> |<a href="piqa/ex.html"> examples </a>|<a href="piqa/ex_v_model_acc.html"> data </a>|<a href="piqa/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#safim" target="_blank">safim</a></td>
+      <td>safim</td>
       <td>17410</td>
       <td>22</td>
       <td><span class="tooltip" data-tooltip="0.0036±0.00021 | [0.0031--0.0038] | n=22">0.36</span></td>
@@ -260,7 +258,7 @@
       <td><a href="safim/model.html">models </a> |<a href="safim/ex.html"> examples </a>|<a href="safim/ex_v_model_acc.html"> data </a>|<a href="safim/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#social-iqa-siqa" target="_blank">siqa</a></td>
+      <td>siqa</td>
       <td>1954</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.011±0.00011 | [0.011--0.011] | n=36">1.1</span></td>
@@ -270,7 +268,7 @@
       <td><a href="siqa/model.html">models </a> |<a href="siqa/ex.html"> examples </a>|<a href="siqa/ex_v_model_acc.html"> data </a>|<a href="siqa/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-bash-only</a></td>
+      <td>swebench-bash-only</td>
       <td>500</td>
       <td>28</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0018 | [0.014--0.022] | n=27">2.1</span></td>
@@ -280,7 +278,7 @@
       <td><a href="swebench-bash-only/model.html">models </a> |<a href="swebench-bash-only/ex.html"> examples </a>|<a href="swebench-bash-only/ex_v_model_acc.html"> data </a>|<a href="swebench-bash-only/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-lite</a></td>
+      <td>swebench-lite</td>
       <td>300</td>
       <td>84</td>
       <td><span class="tooltip" data-tooltip="0.027±0.0021 | [0.019--0.029] | n=78">2.7</span></td>
@@ -290,7 +288,7 @@
       <td><a href="swebench-lite/model.html">models </a> |<a href="swebench-lite/ex.html"> examples </a>|<a href="swebench-lite/ex_v_model_acc.html"> data </a>|<a href="swebench-lite/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-multimodal</a></td>
+      <td>swebench-multimodal</td>
       <td>510</td>
       <td>12</td>
       <td><span class="tooltip" data-tooltip="0.021±0.00063 | [0.019--0.021] | n=12">2.1</span></td>
@@ -300,7 +298,7 @@
       <td><a href="swebench-multimodal/model.html">models </a> |<a href="swebench-multimodal/ex.html"> examples </a>|<a href="swebench-multimodal/ex_v_model_acc.html"> data </a>|<a href="swebench-multimodal/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-test</a></td>
+      <td>swebench-test</td>
       <td>2294</td>
       <td>23</td>
       <td><span class="tooltip" data-tooltip="0.0087±0.0012 | [0.0068--0.01] | n=16">0.87</span></td>
@@ -310,7 +308,7 @@
       <td><a href="swebench-test/model.html">models </a> |<a href="swebench-test/ex.html"> examples </a>|<a href="swebench-test/ex_v_model_acc.html"> data </a>|<a href="swebench-test/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-verified</a></td>
+      <td>swebench-verified</td>
       <td>500</td>
       <td>131</td>
       <td><span class="tooltip" data-tooltip="0.021±0.0014 | [0.014--0.022] | n=125">2.1</span></td>
@@ -320,7 +318,7 @@
       <td><a href="swebench-verified/model.html">models </a> |<a href="swebench-verified/ex.html"> examples </a>|<a href="swebench-verified/ex_v_model_acc.html"> data </a>|<a href="swebench-verified/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#terminal-bench-10-20" target="_blank">terminal-bench-1.0</a></td>
+      <td>terminal-bench-1.0</td>
       <td>80</td>
       <td>25</td>
       <td><span class="tooltip" data-tooltip="0.054±0.0042 | [0.037--0.056] | n=25">5.4</span></td>
@@ -330,7 +328,7 @@
       <td><a href="terminal-bench-1.0/model.html">models </a> |<a href="terminal-bench-1.0/ex.html"> examples </a>|<a href="terminal-bench-1.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-1.0/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#terminal-bench-10-20" target="_blank">terminal-bench-2.0</a></td>
+      <td>terminal-bench-2.0</td>
       <td>89</td>
       <td>7</td>
       <td><span class="tooltip" data-tooltip="0.051±0.002 | [0.047--0.053] | n=7">5.1</span></td>
@@ -340,7 +338,7 @@
       <td><a href="terminal-bench-2.0/model.html">models </a> |<a href="terminal-bench-2.0/ex.html"> examples </a>|<a href="terminal-bench-2.0/ex_v_model_acc.html"> data </a>|<a href="terminal-bench-2.0/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#triviaqa-tqa" target="_blank">tqa</a></td>
+      <td>tqa</td>
       <td>11313</td>
       <td>36</td>
       <td><span class="tooltip" data-tooltip="0.0043±0.00042 | [0.0031--0.0047] | n=36">0.43</span></td>
@@ -362,7 +360,7 @@
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
     <br/>
-    <p class="has-text-grey-light">Generated on 2026-03-05 03:58:15</p>
+    <p class="has-text-grey-light">Generated on 2026-02-14 06:32:53</p>
 </section>
 </div>
 </body>

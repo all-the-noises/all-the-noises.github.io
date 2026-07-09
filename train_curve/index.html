@@ -18,8 +18,7 @@
 <div class="container">
 <section class="section">
     <h1 class="title"> Measuring all the noises of LLM evals </h1>
-    <h3 class="subtitle is-5"> <a href=".">Home</a> </h2>
-    
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
     <h3 class="subtitle is-5"><b>Datasets:</b>
       <a href="../main/">main</a>,
       <a href="../train_curve/">train_curve</a>,
@@ -28,7 +27,6 @@
       <a href="../lowk_temp1/">T=1</a>,
       <a href="../highk_temp0.7/">high K T=0.7</a>,
     </h3>
-    
       Details are linked and more summary stats are available on mouse over.
       <ul>
         <li><b>size</b>: number of questions in the eval</li>
@@ -42,7 +40,7 @@
         <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
       </ul>
 
-<p><a href="summary.csv">Full table</a>, <a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md">Descriptions</a> </p>
+<p><b>Full table: </b><a href="summary.csv">summary.csv</a> </p>
 
     <div style="overflow-x: auto;">
     <table border="1" class="dataframe number-table">
@@ -62,7 +60,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-pro</a></td>
+      <td>swebench-pro</td>
       <td>731</td>
       <td>150</td>
       <td><span class="tooltip" data-tooltip="0.016±0.00033 | [0.015--0.017] | n=150">1.6</span></td>
@@ -74,7 +72,7 @@
       <td><a href="swebench-pro/model.html">models </a> |<a href="swebench-pro/ex.html"> examples </a>|<a href="swebench-pro/ex_v_model_acc.html"> data </a>|<a href="swebench-pro/raw_index.html"> more </a></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md#swe-bench-test-lite-verified-bash-only-multimodal" target="_blank">swebench-verified</a></td>
+      <td>swebench-verified</td>
       <td>500</td>
       <td>150</td>
       <td><span class="tooltip" data-tooltip="0.022±5e-05 | [0.022--0.022] | n=150">2.2</span></td>
@@ -98,7 +96,7 @@
       <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
     </ul>
     <br/>
-    <p class="has-text-grey-light">Generated on 2026-03-05 03:54:12</p>
+    <p class="has-text-grey-light">Generated on 2026-02-14 06:29:09</p>
 </section>
 </div>
 </body>
