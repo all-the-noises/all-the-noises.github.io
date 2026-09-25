@@ -1,0 +1,7 @@
+{"model":"Ante__Gemini-3-Pro-Preview","pass1":0.6471910112,"pass@count":0.8202247191,"win_rate":0.2693632959,"count":5.0,"SE(A)":0.0506513536,"SE_x(A)":0.0402331887,"SE_pred(A)":0.0307709302}
+{"model":"Mux__GPT-5.2","pass1":0.606741573,"pass@count":0.606741573,"win_rate":0.2307116105,"count":1.0,"SE(A)":0.051778074,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Mux__Claude-Opus-4.5","pass1":0.5842696629,"pass@count":0.5842696629,"win_rate":0.2104868914,"count":1.0,"SE(A)":0.0522417268,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"OpenCode__Claude-Opus-4.5","pass1":0.5168539326,"pass@count":0.5168539326,"win_rate":0.172659176,"count":1.0,"SE(A)":0.0529697757,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"MAYA__Claude-4.5-sonnet","pass1":0.4269662921,"pass@count":0.4269662921,"win_rate":0.1865168539,"count":5.0,"SE(A)":0.052431451,"SE_x(A)":0.052431451,"SE_pred(A)":0.0}
+{"model":"Terminus2__GLM-4.7","pass1":0.3303370787,"pass@count":0.5056179775,"win_rate":0.0885393258,"count":5.0,"SE(A)":0.0498553518,"SE_x(A)":0.0392263426,"SE_pred(A)":0.0307709302}
+{"model":"dakou__qwen3-coder-480b","pass1":0.2719101124,"pass@count":0.4269662921,"win_rate":0.0752808989,"count":5.0,"SE(A)":0.0471639506,"SE_x(A)":0.0369589065,"SE_pred(A)":0.0292997861}
