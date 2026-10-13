@@ -1,0 +1,10 @@
+{"model":"seed6529","pass1":0.1097560976,"pass@count":0.1097560976,"win_rate":0.0433604336,"count":1.0,"SE(A)":0.0244088269,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed14309","pass1":0.0975609756,"pass@count":0.0975609756,"win_rate":0.0304878049,"count":1.0,"SE(A)":0.023169949,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed149","pass1":0.0853658537,"pass@count":0.0853658537,"win_rate":0.0291327913,"count":1.0,"SE(A)":0.0218194538,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed16385","pass1":0.0853658537,"pass@count":0.0853658537,"win_rate":0.02100271,"count":1.0,"SE(A)":0.0218194538,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed24762","pass1":0.0792682927,"pass@count":0.0792682927,"win_rate":0.0237127371,"count":1.0,"SE(A)":0.0210957212,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed17495","pass1":0.0792682927,"pass@count":0.0792682927,"win_rate":0.0203252033,"count":1.0,"SE(A)":0.0210957212,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed6115","pass1":0.0792682927,"pass@count":0.0792682927,"win_rate":0.0189701897,"count":1.0,"SE(A)":0.0210957212,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed27712","pass1":0.0731707317,"pass@count":0.0731707317,"win_rate":0.02100271,"count":1.0,"SE(A)":0.0203351156,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed24734","pass1":0.0670731707,"pass@count":0.0670731707,"win_rate":0.0128726287,"count":1.0,"SE(A)":0.0195333299,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"seed30841","pass1":0.0609756098,"pass@count":0.0609756098,"win_rate":0.0081300813,"count":1.0,"SE(A)":0.0186850639,"SE_x(A)":null,"SE_pred(A)":null}

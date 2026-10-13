@@ -1,0 +1,24 @@
+{"model":"Kimi-k1.6-IOI-high","pass1":0.8602272727,"pass@count":0.8602272727,"win_rate":0.2777618577,"count":1.0,"SE(A)":0.0116889765,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O1-2024-12-17 (High)","pass1":0.8318181818,"pass@count":0.8318181818,"win_rate":0.2597332016,"count":1.0,"SE(A)":0.01260847,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Kimi-k1.6-IOI","pass1":0.8014772727,"pass@count":0.8852272727,"win_rate":0.23405583,"count":10.0,"SE(A)":0.013446504,"SE_x(A)":0.0115568344,"SE_pred(A)":0.0068737216}
+{"model":"QwQ-Max-Preview","pass1":0.8,"pass@count":0.8,"win_rate":0.231833004,"count":1.0,"SE(A)":0.0134839972,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O1-2024-12-17 (Med)","pass1":0.7829545455,"pass@count":0.7829545455,"win_rate":0.2205978261,"count":1.0,"SE(A)":0.0138963994,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepSeek-R1-Preview","pass1":0.7788636364,"pass@count":0.8704545455,"win_rate":0.2152771739,"count":10.0,"SE(A)":0.0139900562,"SE_x(A)":0.0121808533,"SE_pred(A)":0.0068810235}
+{"model":"Llama-3_1-Nemotron-Ultra-253B-v1","pass1":0.7772727273,"pass@count":0.7772727273,"win_rate":0.2227470356,"count":1.0,"SE(A)":0.0140259433,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O1-2024-12-17 (Low)","pass1":0.7590909091,"pass@count":0.7590909091,"win_rate":0.2066600791,"count":1.0,"SE(A)":0.0144155811,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepCoder-14B-Preview","pass1":0.7329545455,"pass@count":0.7329545455,"win_rate":0.2055434783,"count":1.0,"SE(A)":0.0149138503,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O1-Mini-2024-09-12","pass1":0.6840909091,"pass@count":0.6840909091,"win_rate":0.1669466403,"count":1.0,"SE(A)":0.0156709973,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"Llama-3_1-Nemotron-Nano-8B-v1","pass1":0.6443181818,"pass@count":0.6443181818,"win_rate":0.1502420949,"count":1.0,"SE(A)":0.0161376276,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepSeek-R1-Lite-Preview","pass1":0.6307954545,"pass@count":0.7954545455,"win_rate":0.1329718379,"count":10.0,"SE(A)":0.0162680861,"SE_x(A)":0.0136500825,"SE_pred(A)":0.0088501905}
+{"model":"QwQ-32B-Preview","pass1":0.5988636364,"pass@count":0.5988636364,"win_rate":0.1153359684,"count":1.0,"SE(A)":0.0165222296,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"O1-Preview-2024-09-12","pass1":0.5556818182,"pass@count":0.5556818182,"win_rate":0.1048913043,"count":1.0,"SE(A)":0.0167501538,"SE_x(A)":null,"SE_pred(A)":null}
+{"model":"DeepSeek-V3 copy","pass1":0.5453409091,"pass@count":0.6363636364,"win_rate":0.0983992095,"count":10.0,"SE(A)":0.0167855526,"SE_x(A)":0.0156491117,"SE_pred(A)":0.0060712501}
+{"model":"MetaStone-L1-7B","pass1":0.5409090909,"pass@count":0.7431818182,"win_rate":0.1000879447,"count":10.0,"SE(A)":0.0167984863,"SE_x(A)":0.0137659325,"SE_pred(A)":0.0096274735}
+{"model":"Gemini-Flash-2.0-Thinking","pass1":0.5114772727,"pass@count":0.6409090909,"win_rate":0.0808255929,"count":10.0,"SE(A)":0.0168505554,"SE_x(A)":0.0150109804,"SE_pred(A)":0.0076558269}
+{"model":"Claude-3.5-Sonnet-20240620","pass1":0.4803409091,"pass@count":0.5136363636,"win_rate":0.0744777668,"count":10.0,"SE(A)":0.0168419633,"SE_x(A)":0.0163583705,"SE_pred(A)":0.0040069241}
+{"model":"GPT-4O-2024-05-13","pass1":0.4343181818,"pass@count":0.5068181818,"win_rate":0.0525133399,"count":10.0,"SE(A)":0.0167089354,"SE_x(A)":0.0158351108,"SE_pred(A)":0.0053327092}
+{"model":"Gemini-Pro-1.5-002","pass1":0.4209090909,"pass@count":0.4772727273,"win_rate":0.0495370553,"count":10.0,"SE(A)":0.0166427922,"SE_x(A)":0.0159615722,"SE_pred(A)":0.0047128276}
+{"model":"Mistral-Large","pass1":0.3729545455,"pass@count":0.4738636364,"win_rate":0.0365508893,"count":10.0,"SE(A)":0.0163018213,"SE_x(A)":0.0150716021,"SE_pred(A)":0.0062125831}
+{"model":"Gemini-Flash-1.5-002","pass1":0.36125,"pass@count":0.3920454545,"win_rate":0.0335909091,"count":10.0,"SE(A)":0.0161930273,"SE_x(A)":0.0158296521,"SE_pred(A)":0.0034111946}
+{"model":"Codestral-Latest","pass1":0.3532954545,"pass@count":0.4215909091,"win_rate":0.0331220356,"count":10.0,"SE(A)":0.0161131573,"SE_x(A)":0.0152056042,"SE_pred(A)":0.0053313637}
+{"model":"AzeroGPT-64b","pass1":0.2203409091,"pass@count":0.4068181818,"win_rate":0.0114856719,"count":10.0,"SE(A)":0.0139720009,"SE_x(A)":0.0110258058,"SE_pred(A)":0.0085818655}

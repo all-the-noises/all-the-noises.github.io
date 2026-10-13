@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />   <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link
+  rel="stylesheet"
+  href="static/css/bulma.min.css"
+>
+<link
+  rel="stylesheet"
+  href="static/css/custom.css"
+>
+</head>
+<body>
+
+<div class="container">
+<section class="section">
+    <h1 class="title"> Measuring all the noises of LLM evals </h1>
+    <h3 class="subtitle is-5"> <a href=".">Home</a>  <a href="https://arxiv.org/abs/2512.21326">Paper</a> <a href="https://github.com/all-the-noises/eval-arena">Code</a> </h2>
+    
+    <h3 class="subtitle is-5"><b>Datasets:</b>
+      <a href="../main/">main</a>,
+      <a href="../train_curve/">train_curve</a>,
+      <a href="../training_seeds/">training_seeds</a>,
+      Open models with vLLM:
+      <a href="../lowk_temp0.7/">T=0.7</a>,
+      <a href="../lowk_temp1/">T=1</a>,
+      <a href="../highk_temp0.7/">high K T=0.7</a>,
+    </h3>
+    
+      Details are linked and more summary stats are available on mouse over.
+      <ul>
+        <li><b>size</b>: number of questions in the eval</li>
+        <li><b>models</b>: the number of models used on this eval</li>
+        <li><b>SE(A)</b>: the standard error (SE_x for data SE) in percent. A difference of 1.96 &times; 1.41 &times; SE(A) is the conventional standard</li>
+        <li><b>SE(A-B)</b>: the paired standard error (SE_x for data SE) in percent. A difference of 1.96 &times; SE(A-B) is the conventional standard</li>
+        <!-- <li><b>corr(A,B)</b>: correlation of expected scores in percent</li> -->
+        <li><b>no_solve</b>: percent questions not solved by any models</li>
+        <li><b>tau-</b>: percent questions negatively correlated with the overall model quality as measured by Kendall's tau</li>
+        <li><b>details</b>: aggregating by the models; by examples; the prediction heatmap; and raw data tables.</li>
+        <!-- <li><b>sig_noise</b>: median of <a href="signal_noise.html">signal-to-noise ratios</a> for doubling the model size.</li> -->
+      </ul>
+
+<p><a href="summary.csv">Full table</a>, <a href="https://github.com/all-the-noises/eval-arena/blob/main/doc/benchmarks.md">Descriptions</a> </p>
+
+    <div style="overflow-x: auto;">
+    <table border="1" class="dataframe number-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>benchmark_id</th>
+      <th>size</th>
+      <th>models</th>
+      <th>SE(A)</th>
+      <th>SE(A-B)</th>
+      <th>no_solve</th>
+      <th>tau-</th>
+      <th>details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>agi_english_step02500</td>
+      <td>2546</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0081±9e-05 | [0.008--0.0083] | n=10">0.81</span></td>
+      <td><span class="tooltip" data-tooltip="0.0096±0.00085 | [0.0075--0.012] | n=90">0.96</span></td>
+      <td>35</td>
+      <td>30</td>
+      <td><a href="agi_english_step02500/model.html">models </a> |<a href="agi_english_step02500/ex.html"> examples </a>|<a href="agi_english_step02500/ex_v_model_acc.html"> data </a>|<a href="agi_english_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>agi_english_step27500</td>
+      <td>2546</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0083±0.00013 | [0.0081--0.0085] | n=10">0.83</span></td>
+      <td><span class="tooltip" data-tooltip="0.011±0.001 | [0.0084--0.012] | n=90">1.1</span></td>
+      <td>26</td>
+      <td>36</td>
+      <td><a href="agi_english_step27500/model.html">models </a> |<a href="agi_english_step27500/ex.html"> examples </a>|<a href="agi_english_step27500/ex_v_model_acc.html"> data </a>|<a href="agi_english_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>agi_english_step50000</td>
+      <td>2546</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0084±0.00012 | [0.0081--0.0086] | n=10">0.84</span></td>
+      <td><span class="tooltip" data-tooltip="0.011±0.00094 | [0.0088--0.012] | n=90">1.1</span></td>
+      <td>26</td>
+      <td>33</td>
+      <td><a href="agi_english_step50000/model.html">models </a> |<a href="agi_english_step50000/ex.html"> examples </a>|<a href="agi_english_step50000/ex_v_model_acc.html"> data </a>|<a href="agi_english_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>arc_challenge_step02500</td>
+      <td>1165</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.013±0.00015 | [0.012--0.013] | n=10">1.3</span></td>
+      <td><span class="tooltip" data-tooltip="0.0091±0.00027 | [0.0086--0.0099] | n=90">0.91</span></td>
+      <td>61</td>
+      <td>10</td>
+      <td><a href="arc_challenge_step02500/model.html">models </a> |<a href="arc_challenge_step02500/ex.html"> examples </a>|<a href="arc_challenge_step02500/ex_v_model_acc.html"> data </a>|<a href="arc_challenge_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>arc_challenge_step27500</td>
+      <td>1165</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.014±9.3e-05 | [0.014--0.014] | n=10">1.4</span></td>
+      <td><span class="tooltip" data-tooltip="0.011±0.00032 | [0.01--0.011] | n=90">1.1</span></td>
+      <td>44</td>
+      <td>14</td>
+      <td><a href="arc_challenge_step27500/model.html">models </a> |<a href="arc_challenge_step27500/ex.html"> examples </a>|<a href="arc_challenge_step27500/ex_v_model_acc.html"> data </a>|<a href="arc_challenge_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>arc_challenge_step50000</td>
+      <td>1165</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.014±5.9e-05 | [0.014--0.014] | n=10">1.4</span></td>
+      <td><span class="tooltip" data-tooltip="0.011±0.0004 | [0.0096--0.012] | n=90">1.1</span></td>
+      <td>41</td>
+      <td>16</td>
+      <td><a href="arc_challenge_step50000/model.html">models </a> |<a href="arc_challenge_step50000/ex.html"> examples </a>|<a href="arc_challenge_step50000/ex_v_model_acc.html"> data </a>|<a href="arc_challenge_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>gsm8k_step02500</td>
+      <td>1319</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>93</td>
+      <td>2.5</td>
+      <td><a href="gsm8k_step02500/model.html">models </a> |<a href="gsm8k_step02500/ex.html"> examples </a>|<a href="gsm8k_step02500/ex_v_model_acc.html"> data </a>|<a href="gsm8k_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>gsm8k_step27500</td>
+      <td>1319</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>82</td>
+      <td>6</td>
+      <td><a href="gsm8k_step27500/model.html">models </a> |<a href="gsm8k_step27500/ex.html"> examples </a>|<a href="gsm8k_step27500/ex_v_model_acc.html"> data </a>|<a href="gsm8k_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>gsm8k_step50000</td>
+      <td>1319</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>79</td>
+      <td>7.9</td>
+      <td><a href="gsm8k_step50000/model.html">models </a> |<a href="gsm8k_step50000/ex.html"> examples </a>|<a href="gsm8k_step50000/ex_v_model_acc.html"> data </a>|<a href="gsm8k_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>hellaswag_step02500</td>
+      <td>10042</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0048±9.3e-06 | [0.0048--0.0048] | n=10">0.48</span></td>
+      <td><span class="tooltip" data-tooltip="0.003±6.9e-05 | [0.0028--0.0031] | n=90">0.3</span></td>
+      <td>50</td>
+      <td>11</td>
+      <td><a href="hellaswag_step02500/model.html">models </a> |<a href="hellaswag_step02500/ex.html"> examples </a>|<a href="hellaswag_step02500/ex_v_model_acc.html"> data </a>|<a href="hellaswag_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>hellaswag_step27500</td>
+      <td>10042</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0047±7.3e-06 | [0.0047--0.0047] | n=10">0.47</span></td>
+      <td><span class="tooltip" data-tooltip="0.0028±4e-05 | [0.0027--0.0029] | n=90">0.28</span></td>
+      <td>24</td>
+      <td>9.6</td>
+      <td><a href="hellaswag_step27500/model.html">models </a> |<a href="hellaswag_step27500/ex.html"> examples </a>|<a href="hellaswag_step27500/ex_v_model_acc.html"> data </a>|<a href="hellaswag_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>hellaswag_step50000</td>
+      <td>10042</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0046±5.3e-06 | [0.0046--0.0046] | n=10">0.46</span></td>
+      <td><span class="tooltip" data-tooltip="0.0026±4.7e-05 | [0.0026--0.0028] | n=90">0.26</span></td>
+      <td>21</td>
+      <td>8.8</td>
+      <td><a href="hellaswag_step50000/model.html">models </a> |<a href="hellaswag_step50000/ex.html"> examples </a>|<a href="hellaswag_step50000/ex_v_model_acc.html"> data </a>|<a href="hellaswag_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>humaneval_step02500</td>
+      <td>164</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>97</td>
+      <td>0</td>
+      <td><a href="humaneval_step02500/model.html">models </a> |<a href="humaneval_step02500/ex.html"> examples </a>|<a href="humaneval_step02500/ex_v_model_acc.html"> data </a>|<a href="humaneval_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>humaneval_step27500</td>
+      <td>164</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.024±nan | [0.024--0.024] | n=1">2.4</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>84</td>
+      <td>3.7</td>
+      <td><a href="humaneval_step27500/model.html">models </a> |<a href="humaneval_step27500/ex.html"> examples </a>|<a href="humaneval_step27500/ex_v_model_acc.html"> data </a>|<a href="humaneval_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>humaneval_step50000</td>
+      <td>164</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.026±0.0012 | [0.024--0.027] | n=8">2.6</span></td>
+      <td><span class="tooltip" data-tooltip="0.018±0.0023 | [0.012--0.021] | n=56">1.8</span></td>
+      <td>80</td>
+      <td>2.4</td>
+      <td><a href="humaneval_step50000/model.html">models </a> |<a href="humaneval_step50000/ex.html"> examples </a>|<a href="humaneval_step50000/ex_v_model_acc.html"> data </a>|<a href="humaneval_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>nq_step02500</td>
+      <td>3610</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>94</td>
+      <td>1.8</td>
+      <td><a href="nq_step02500/model.html">models </a> |<a href="nq_step02500/ex.html"> examples </a>|<a href="nq_step02500/ex_v_model_acc.html"> data </a>|<a href="nq_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>nq_step27500</td>
+      <td>3610</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0056±0.00016 | [0.0054--0.0059] | n=10">0.56</span></td>
+      <td><span class="tooltip" data-tooltip="0.0051±0.00017 | [0.0048--0.0055] | n=90">0.51</span></td>
+      <td>71</td>
+      <td>10</td>
+      <td><a href="nq_step27500/model.html">models </a> |<a href="nq_step27500/ex.html"> examples </a>|<a href="nq_step27500/ex_v_model_acc.html"> data </a>|<a href="nq_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>nq_step50000</td>
+      <td>3610</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0062±0.00017 | [0.0058--0.0064] | n=10">0.62</span></td>
+      <td><span class="tooltip" data-tooltip="0.0054±0.00021 | [0.005--0.0057] | n=84">0.54</span></td>
+      <td>67</td>
+      <td>11</td>
+      <td><a href="nq_step50000/model.html">models </a> |<a href="nq_step50000/ex.html"> examples </a>|<a href="nq_step50000/ex_v_model_acc.html"> data </a>|<a href="nq_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>piqa_step02500</td>
+      <td>1838</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.011±3.2e-05 | [0.011--0.011] | n=10">1.1</span></td>
+      <td><span class="tooltip" data-tooltip="0.0076±0.00021 | [0.0071--0.008] | n=90">0.76</span></td>
+      <td>22</td>
+      <td>13</td>
+      <td><a href="piqa_step02500/model.html">models </a> |<a href="piqa_step02500/ex.html"> examples </a>|<a href="piqa_step02500/ex_v_model_acc.html"> data </a>|<a href="piqa_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>piqa_step27500</td>
+      <td>1838</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.01±4.6e-05 | [0.0099--0.01] | n=10">1</span></td>
+      <td><span class="tooltip" data-tooltip="0.0068±0.00022 | [0.0061--0.0072] | n=90">0.68</span></td>
+      <td>15</td>
+      <td>9.2</td>
+      <td><a href="piqa_step27500/model.html">models </a> |<a href="piqa_step27500/ex.html"> examples </a>|<a href="piqa_step27500/ex_v_model_acc.html"> data </a>|<a href="piqa_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>piqa_step50000</td>
+      <td>1838</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0098±6.1e-05 | [0.0097--0.0099] | n=10">0.98</span></td>
+      <td><span class="tooltip" data-tooltip="0.0065±0.00018 | [0.0061--0.0068] | n=90">0.65</span></td>
+      <td>15</td>
+      <td>9</td>
+      <td><a href="piqa_step50000/model.html">models </a> |<a href="piqa_step50000/ex.html"> examples </a>|<a href="piqa_step50000/ex_v_model_acc.html"> data </a>|<a href="piqa_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>siqa_step02500</td>
+      <td>1954</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.011±1.8e-05 | [0.011--0.011] | n=10">1.1</span></td>
+      <td><span class="tooltip" data-tooltip="0.0066±0.00022 | [0.0061--0.007] | n=90">0.66</span></td>
+      <td>46</td>
+      <td>9.6</td>
+      <td><a href="siqa_step02500/model.html">models </a> |<a href="siqa_step02500/ex.html"> examples </a>|<a href="siqa_step02500/ex_v_model_acc.html"> data </a>|<a href="siqa_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>siqa_step27500</td>
+      <td>1954</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.011±1.5e-05 | [0.011--0.011] | n=10">1.1</span></td>
+      <td><span class="tooltip" data-tooltip="0.0068±0.0002 | [0.0065--0.0073] | n=90">0.68</span></td>
+      <td>42</td>
+      <td>9.5</td>
+      <td><a href="siqa_step27500/model.html">models </a> |<a href="siqa_step27500/ex.html"> examples </a>|<a href="siqa_step27500/ex_v_model_acc.html"> data </a>|<a href="siqa_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>siqa_step50000</td>
+      <td>1954</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.011±8.1e-06 | [0.011--0.011] | n=10">1.1</span></td>
+      <td><span class="tooltip" data-tooltip="0.0067±0.00021 | [0.006--0.0071] | n=90">0.67</span></td>
+      <td>42</td>
+      <td>10</td>
+      <td><a href="siqa_step50000/model.html">models </a> |<a href="siqa_step50000/ex.html"> examples </a>|<a href="siqa_step50000/ex_v_model_acc.html"> data </a>|<a href="siqa_step50000/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>tqa_step02500</td>
+      <td>11313</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td><span class="tooltip" data-tooltip="n=0">nan</span></td>
+      <td>88</td>
+      <td>4</td>
+      <td><a href="tqa_step02500/model.html">models </a> |<a href="tqa_step02500/ex.html"> examples </a>|<a href="tqa_step02500/ex_v_model_acc.html"> data </a>|<a href="tqa_step02500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>tqa_step27500</td>
+      <td>11313</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0045±1.7e-05 | [0.0044--0.0045] | n=10">0.45</span></td>
+      <td><span class="tooltip" data-tooltip="0.0035±3.5e-05 | [0.0035--0.0036] | n=86">0.35</span></td>
+      <td>46</td>
+      <td>16</td>
+      <td><a href="tqa_step27500/model.html">models </a> |<a href="tqa_step27500/ex.html"> examples </a>|<a href="tqa_step27500/ex_v_model_acc.html"> data </a>|<a href="tqa_step27500/raw_index.html"> more </a></td>
+    </tr>
+    <tr>
+      <td>tqa_step50000</td>
+      <td>11313</td>
+      <td>10</td>
+      <td><span class="tooltip" data-tooltip="0.0047±7.1e-06 | [0.0046--0.0047] | n=10">0.47</span></td>
+      <td><span class="tooltip" data-tooltip="0.0035±3.5e-05 | [0.0035--0.0036] | n=90">0.35</span></td>
+      <td>38</td>
+      <td>16</td>
+      <td><a href="tqa_step50000/model.html">models </a> |<a href="tqa_step50000/ex.html"> examples </a>|<a href="tqa_step50000/ex_v_model_acc.html"> data </a>|<a href="tqa_step50000/raw_index.html"> more </a></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <!-- <div>
+    
+    </div> -->
+    <br/>
+    <h3 class="subtitle">Notes:</h3>
+    <ul>
+      <li>Some datasets contains clustered questions (DS-1000, SAFIM, SQuAD, SWE-bench), a cluster correction might be needed (further increases the interval) but is not used.</a></li>
+    </ul>
+    <br/>
+    <p class="has-text-grey-light">Generated on 2026-10-07 00:21:57</p>
+</section>
+</div>
+</body>
+</html>
